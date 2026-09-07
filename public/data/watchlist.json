@@ -1,3 +1,11 @@
 {
-  "tickers": ["AAPL", "BRK-B", "COST", "GOOG", "KO", "MSFT"]
+  "companies": [
+    {"code": "600519", "exchange": "SH", "name": "贵州茅台", "orgId": "gssh0600519", "type": "industrial"},
+    {"code": "000858", "exchange": "SZ", "name": "五粮液", "orgId": "gssz0000858", "type": "industrial"},
+    {"code": "000333", "exchange": "SZ", "name": "美的集团", "orgId": "9900005965", "type": "industrial"},
+    {"code": "600036", "exchange": "SH", "name": "招商银行", "orgId": "gssh0600036", "type": "financial"},
+    {"code": "601318", "exchange": "SH", "name": "中国平安", "orgId": "gssh0601318", "type": "financial"},
+    {"code": "000651", "exchange": "SZ", "name": "格力电器", "orgId": "gssz0000651", "type": "industrial"},
+    {"code": "300750", "exchange": "SZ", "name": "宁德时代", "orgId": "GD165627", "type": "industrial"}
+  ]
 }
