@@ -1,0 +1,1061 @@
+{
+  "generatedAt": "2026-09-07T06:53:39.173256+00:00",
+  "source": "U.S. Securities and Exchange Commission EDGAR",
+  "sourceUrl": "https://www.sec.gov/edgar/sec-api-documentation",
+  "companies": [
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "cik": "0000320193",
+      "fiscalYearEnd": "0926",
+      "metrics": {
+        "revenue": 416161000000,
+        "netIncome": 112010000000,
+        "freeCashFlow": 98767000000,
+        "equity": 73733000000,
+        "cash": 35934000000,
+        "roe": 1.5191298333175105,
+        "liabilitiesToAssets": 0.7947533828265705
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2020",
+            "value": 274515000000,
+            "filed": "2020-10-30"
+          },
+          {
+            "year": "2021",
+            "value": 365817000000,
+            "filed": "2021-10-29"
+          },
+          {
+            "year": "2022",
+            "value": 394328000000,
+            "filed": "2022-10-28"
+          },
+          {
+            "year": "2023",
+            "value": 383285000000,
+            "filed": "2023-11-03"
+          },
+          {
+            "year": "2024",
+            "value": 391035000000,
+            "filed": "2024-11-01"
+          },
+          {
+            "year": "2025",
+            "value": 416161000000,
+            "filed": "2025-10-31"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2020",
+            "value": 57411000000,
+            "filed": "2020-10-30"
+          },
+          {
+            "year": "2021",
+            "value": 94680000000,
+            "filed": "2021-10-29"
+          },
+          {
+            "year": "2022",
+            "value": 99803000000,
+            "filed": "2022-10-28"
+          },
+          {
+            "year": "2023",
+            "value": 96995000000,
+            "filed": "2023-11-03"
+          },
+          {
+            "year": "2024",
+            "value": 93736000000,
+            "filed": "2024-11-01"
+          },
+          {
+            "year": "2025",
+            "value": 112010000000,
+            "filed": "2025-10-31"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2020",
+            "value": 73365000000,
+            "filed": "2020-10-30"
+          },
+          {
+            "year": "2021",
+            "value": 92953000000,
+            "filed": "2021-10-29"
+          },
+          {
+            "year": "2022",
+            "value": 111443000000,
+            "filed": "2022-10-28"
+          },
+          {
+            "year": "2023",
+            "value": 99584000000,
+            "filed": "2023-11-03"
+          },
+          {
+            "year": "2024",
+            "value": 108807000000,
+            "filed": "2024-11-01"
+          },
+          {
+            "year": "2025",
+            "value": 98767000000,
+            "filed": "2025-10-31"
+          }
+        ],
+        "shares": [
+          {
+            "year": "2020",
+            "value": 17528214000,
+            "filed": "2020-10-30"
+          },
+          {
+            "year": "2021",
+            "value": 16864919000,
+            "filed": "2021-10-29"
+          },
+          {
+            "year": "2022",
+            "value": 16325819000,
+            "filed": "2022-10-28"
+          },
+          {
+            "year": "2023",
+            "value": 15812547000,
+            "filed": "2023-11-03"
+          },
+          {
+            "year": "2024",
+            "value": 15408095000,
+            "filed": "2024-11-01"
+          },
+          {
+            "year": "2025",
+            "value": 15004697000,
+            "filed": "2025-10-31"
+          }
+        ]
+      },
+      "filings": [
+        {
+          "form": "10-Q",
+          "filed": "2026-07-31",
+          "period": "2026-06-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-05-01",
+          "period": "2026-03-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-01-30",
+          "period": "2025-12-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2025-10-31",
+          "period": "2025-09-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-08-01",
+          "period": "2025-06-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-05-02",
+          "period": "2025-03-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000057/aapl-20250329.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "BERKSHIRE HATHAWAY INC",
+      "cik": "0001067983",
+      "fiscalYearEnd": "1231",
+      "metrics": {
+        "revenue": 247244000000,
+        "netIncome": 66968000000,
+        "freeCashFlow": 25042000000,
+        "equity": 717419000000,
+        "cash": 52569000000,
+        "roe": 0.09334572962243821,
+        "liabilitiesToAssets": 0.41112982090959077
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2020",
+            "value": 166733000000,
+            "filed": "2021-03-01"
+          },
+          {
+            "year": "2021",
+            "value": 191252000000,
+            "filed": "2022-02-28"
+          },
+          {
+            "year": "2022",
+            "value": 207771000000,
+            "filed": "2023-02-27"
+          },
+          {
+            "year": "2023",
+            "value": 254906000000,
+            "filed": "2024-02-26"
+          },
+          {
+            "year": "2024",
+            "value": 249714000000,
+            "filed": "2025-02-24"
+          },
+          {
+            "year": "2025",
+            "value": 247244000000,
+            "filed": "2026-03-02"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2020",
+            "value": 42521000000,
+            "filed": "2021-03-01"
+          },
+          {
+            "year": "2021",
+            "value": 89795000000,
+            "filed": "2022-02-28"
+          },
+          {
+            "year": "2022",
+            "value": -22819000000,
+            "filed": "2023-02-27"
+          },
+          {
+            "year": "2023",
+            "value": 96223000000,
+            "filed": "2024-02-26"
+          },
+          {
+            "year": "2024",
+            "value": 88995000000,
+            "filed": "2025-02-24"
+          },
+          {
+            "year": "2025",
+            "value": 66968000000,
+            "filed": "2026-03-02"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2020",
+            "value": 26761000000,
+            "filed": "2021-03-01"
+          },
+          {
+            "year": "2021",
+            "value": 26145000000,
+            "filed": "2022-02-28"
+          },
+          {
+            "year": "2022",
+            "value": 21760000000,
+            "filed": "2023-02-27"
+          },
+          {
+            "year": "2023",
+            "value": 29787000000,
+            "filed": "2024-02-26"
+          },
+          {
+            "year": "2024",
+            "value": 11616000000,
+            "filed": "2025-02-24"
+          },
+          {
+            "year": "2025",
+            "value": 25042000000,
+            "filed": "2026-03-02"
+          }
+        ],
+        "shares": []
+      },
+      "filings": [
+        {
+          "form": "10-Q",
+          "filed": "2026-08-10",
+          "period": "2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526341032/brka-20260630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-05-04",
+          "period": "2026-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526202243/brka-20260331.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2026-03-02",
+          "period": "2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-11-03",
+          "period": "2025-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312525261548/brka-20250930.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-08-04",
+          "period": "2025-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017025101578/brka-20250630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-05-05",
+          "period": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017025063112/brka-20250331.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json"
+    },
+    {
+      "ticker": "COST",
+      "name": "COSTCO WHOLESALE CORP /NEW",
+      "cik": "0000909832",
+      "fiscalYearEnd": "0830",
+      "metrics": {
+        "revenue": 275235000000,
+        "netIncome": 8099000000,
+        "freeCashFlow": 7837000000,
+        "equity": 29164000000,
+        "cash": 14161000000,
+        "roe": 0.27770539020710466,
+        "liabilitiesToAssets": 0.6217330964085137
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2020",
+            "value": 166761000000,
+            "filed": "2020-10-07"
+          },
+          {
+            "year": "2021",
+            "value": 195929000000,
+            "filed": "2021-10-06"
+          },
+          {
+            "year": "2022",
+            "value": 226954000000,
+            "filed": "2022-10-05"
+          },
+          {
+            "year": "2023",
+            "value": 242290000000,
+            "filed": "2023-10-11"
+          },
+          {
+            "year": "2024",
+            "value": 254453000000,
+            "filed": "2024-10-09"
+          },
+          {
+            "year": "2025",
+            "value": 275235000000,
+            "filed": "2025-10-08"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2020",
+            "value": 4002000000,
+            "filed": "2020-10-07"
+          },
+          {
+            "year": "2021",
+            "value": 5007000000,
+            "filed": "2021-10-06"
+          },
+          {
+            "year": "2022",
+            "value": 5844000000,
+            "filed": "2022-10-05"
+          },
+          {
+            "year": "2023",
+            "value": 6292000000,
+            "filed": "2023-10-11"
+          },
+          {
+            "year": "2024",
+            "value": 7367000000,
+            "filed": "2024-10-09"
+          },
+          {
+            "year": "2025",
+            "value": 8099000000,
+            "filed": "2025-10-08"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2020",
+            "value": 6051000000,
+            "filed": "2020-10-07"
+          },
+          {
+            "year": "2021",
+            "value": 5370000000,
+            "filed": "2021-10-06"
+          },
+          {
+            "year": "2022",
+            "value": 3501000000,
+            "filed": "2022-10-05"
+          },
+          {
+            "year": "2023",
+            "value": 6745000000,
+            "filed": "2023-10-11"
+          },
+          {
+            "year": "2024",
+            "value": 6629000000,
+            "filed": "2024-10-09"
+          },
+          {
+            "year": "2025",
+            "value": 7837000000,
+            "filed": "2025-10-08"
+          }
+        ],
+        "shares": [
+          {
+            "year": "2020",
+            "value": 443901000,
+            "filed": "2020-10-07"
+          },
+          {
+            "year": "2021",
+            "value": 444346000,
+            "filed": "2021-10-06"
+          },
+          {
+            "year": "2022",
+            "value": 444757000,
+            "filed": "2022-10-05"
+          },
+          {
+            "year": "2023",
+            "value": 444452000,
+            "filed": "2023-10-11"
+          },
+          {
+            "year": "2024",
+            "value": 444759000,
+            "filed": "2024-10-09"
+          },
+          {
+            "year": "2025",
+            "value": 444803000,
+            "filed": "2025-10-08"
+          }
+        ]
+      },
+      "filings": [
+        {
+          "form": "10-Q",
+          "filed": "2026-06-03",
+          "period": "2026-05-10",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-03-11",
+          "period": "2026-02-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000029/cost-20260215.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-12-17",
+          "period": "2025-11-23",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000169/cost-20251123.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2025-10-08",
+          "period": "2025-08-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-06-05",
+          "period": "2025-05-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000033/cost-20250511.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-03-13",
+          "period": "2025-02-16",
+          "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000015/cost-20250216.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json"
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "cik": "0001652044",
+      "fiscalYearEnd": "1231",
+      "metrics": {
+        "revenue": 402836000000,
+        "netIncome": 132170000000,
+        "freeCashFlow": 73266000000,
+        "equity": 415265000000,
+        "cash": 30708000000,
+        "roe": 0.3182786895115167,
+        "liabilitiesToAssets": 0.3024050826416432
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2020",
+            "value": 182527000000,
+            "filed": "2021-02-03"
+          },
+          {
+            "year": "2021",
+            "value": 257637000000,
+            "filed": "2022-02-02"
+          },
+          {
+            "year": "2022",
+            "value": 282836000000,
+            "filed": "2023-02-03"
+          },
+          {
+            "year": "2023",
+            "value": 307394000000,
+            "filed": "2024-01-31"
+          },
+          {
+            "year": "2024",
+            "value": 350018000000,
+            "filed": "2025-02-05"
+          },
+          {
+            "year": "2025",
+            "value": 402836000000,
+            "filed": "2026-02-05"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2020",
+            "value": 40269000000,
+            "filed": "2021-02-03"
+          },
+          {
+            "year": "2021",
+            "value": 76033000000,
+            "filed": "2022-02-02"
+          },
+          {
+            "year": "2022",
+            "value": 59972000000,
+            "filed": "2023-02-03"
+          },
+          {
+            "year": "2023",
+            "value": 73795000000,
+            "filed": "2024-01-31"
+          },
+          {
+            "year": "2024",
+            "value": 100118000000,
+            "filed": "2025-02-05"
+          },
+          {
+            "year": "2025",
+            "value": 132170000000,
+            "filed": "2026-02-05"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2020",
+            "value": 42843000000,
+            "filed": "2021-02-03"
+          },
+          {
+            "year": "2021",
+            "value": 67012000000,
+            "filed": "2022-02-02"
+          },
+          {
+            "year": "2022",
+            "value": 60010000000,
+            "filed": "2023-02-03"
+          },
+          {
+            "year": "2023",
+            "value": 69495000000,
+            "filed": "2024-01-31"
+          },
+          {
+            "year": "2024",
+            "value": 72764000000,
+            "filed": "2025-02-05"
+          },
+          {
+            "year": "2025",
+            "value": 73266000000,
+            "filed": "2026-02-05"
+          }
+        ],
+        "shares": [
+          {
+            "year": "2024",
+            "value": 12447000000,
+            "filed": "2025-02-05"
+          },
+          {
+            "year": "2025",
+            "value": 12230000000,
+            "filed": "2026-02-05"
+          }
+        ]
+      },
+      "filings": [
+        {
+          "form": "10-Q",
+          "filed": "2026-07-23",
+          "period": "2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-04-30",
+          "period": "2026-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2026-02-05",
+          "period": "2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-10-30",
+          "period": "2025-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-07-24",
+          "period": "2025-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/goog-20250630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-04-25",
+          "period": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/goog-20250331.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+    },
+    {
+      "ticker": "KO",
+      "name": "COCA COLA CO",
+      "cik": "0000021344",
+      "fiscalYearEnd": "1231",
+      "metrics": {
+        "revenue": 47941000000,
+        "netIncome": 13107000000,
+        "freeCashFlow": 5296000000,
+        "equity": 32169000000,
+        "cash": 10270000000,
+        "roe": 0.4074419472162641,
+        "liabilitiesToAssets": null
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2020",
+            "value": 33014000000,
+            "filed": "2021-02-25"
+          },
+          {
+            "year": "2021",
+            "value": 38655000000,
+            "filed": "2022-02-22"
+          },
+          {
+            "year": "2022",
+            "value": 43004000000,
+            "filed": "2023-02-21"
+          },
+          {
+            "year": "2023",
+            "value": 45754000000,
+            "filed": "2024-02-20"
+          },
+          {
+            "year": "2024",
+            "value": 47061000000,
+            "filed": "2025-02-20"
+          },
+          {
+            "year": "2025",
+            "value": 47941000000,
+            "filed": "2026-02-20"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2020",
+            "value": 7747000000,
+            "filed": "2021-02-25"
+          },
+          {
+            "year": "2021",
+            "value": 9771000000,
+            "filed": "2022-02-22"
+          },
+          {
+            "year": "2022",
+            "value": 9542000000,
+            "filed": "2023-02-21"
+          },
+          {
+            "year": "2023",
+            "value": 10714000000,
+            "filed": "2024-02-20"
+          },
+          {
+            "year": "2024",
+            "value": 10631000000,
+            "filed": "2025-02-20"
+          },
+          {
+            "year": "2025",
+            "value": 13107000000,
+            "filed": "2026-02-20"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2020",
+            "value": 8667000000,
+            "filed": "2021-02-25"
+          },
+          {
+            "year": "2021",
+            "value": 11258000000,
+            "filed": "2022-02-22"
+          },
+          {
+            "year": "2022",
+            "value": 9534000000,
+            "filed": "2023-02-21"
+          },
+          {
+            "year": "2023",
+            "value": 9747000000,
+            "filed": "2024-02-20"
+          },
+          {
+            "year": "2024",
+            "value": 4741000000,
+            "filed": "2025-02-20"
+          },
+          {
+            "year": "2025",
+            "value": 5296000000,
+            "filed": "2026-02-20"
+          }
+        ],
+        "shares": [
+          {
+            "year": "2020",
+            "value": 4323000000,
+            "filed": "2021-02-25"
+          },
+          {
+            "year": "2021",
+            "value": 4340000000,
+            "filed": "2022-02-22"
+          },
+          {
+            "year": "2022",
+            "value": 4350000000,
+            "filed": "2023-02-21"
+          },
+          {
+            "year": "2023",
+            "value": 4339000000,
+            "filed": "2024-02-20"
+          },
+          {
+            "year": "2024",
+            "value": 4320000000,
+            "filed": "2025-02-20"
+          },
+          {
+            "year": "2025",
+            "value": 4313000000,
+            "filed": "2026-02-20"
+          }
+        ]
+      },
+      "filings": [
+        {
+          "form": "10-Q",
+          "filed": "2026-07-29",
+          "period": "2026-07-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026050503/ko-20260703.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-04-30",
+          "period": "2026-04-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026028802/ko-20260403.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2026-02-20",
+          "period": "2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-10-23",
+          "period": "2025-09-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828025046054/ko-20250926.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-07-24",
+          "period": "2025-06-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000061/ko-20250627.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-05-01",
+          "period": "2025-03-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000029/ko-20250328.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORPORATION",
+      "cik": "0000789019",
+      "fiscalYearEnd": "0630",
+      "metrics": {
+        "revenue": 331839000000,
+        "netIncome": 133749000000,
+        "freeCashFlow": 66987000000,
+        "equity": 442387000000,
+        "cash": 20935000000,
+        "roe": 0.30233483352811,
+        "liabilitiesToAssets": 0.41666534805953775
+      },
+      "series": {
+        "revenue": [
+          {
+            "year": "2021",
+            "value": 168088000000,
+            "filed": "2021-07-29"
+          },
+          {
+            "year": "2022",
+            "value": 198270000000,
+            "filed": "2022-07-28"
+          },
+          {
+            "year": "2023",
+            "value": 211915000000,
+            "filed": "2023-07-27"
+          },
+          {
+            "year": "2024",
+            "value": 245122000000,
+            "filed": "2024-07-30"
+          },
+          {
+            "year": "2025",
+            "value": 281724000000,
+            "filed": "2025-07-30"
+          },
+          {
+            "year": "2026",
+            "value": 331839000000,
+            "filed": "2026-07-29"
+          }
+        ],
+        "netIncome": [
+          {
+            "year": "2021",
+            "value": 61271000000,
+            "filed": "2021-07-29"
+          },
+          {
+            "year": "2022",
+            "value": 72738000000,
+            "filed": "2022-07-28"
+          },
+          {
+            "year": "2023",
+            "value": 72361000000,
+            "filed": "2023-07-27"
+          },
+          {
+            "year": "2024",
+            "value": 88136000000,
+            "filed": "2024-07-30"
+          },
+          {
+            "year": "2025",
+            "value": 101832000000,
+            "filed": "2025-07-30"
+          },
+          {
+            "year": "2026",
+            "value": 133749000000,
+            "filed": "2026-07-29"
+          }
+        ],
+        "freeCashFlow": [
+          {
+            "year": "2021",
+            "value": 56118000000,
+            "filed": "2021-07-29"
+          },
+          {
+            "year": "2022",
+            "value": 65149000000,
+            "filed": "2022-07-28"
+          },
+          {
+            "year": "2023",
+            "value": 59475000000,
+            "filed": "2023-07-27"
+          },
+          {
+            "year": "2024",
+            "value": 74071000000,
+            "filed": "2024-07-30"
+          },
+          {
+            "year": "2025",
+            "value": 71611000000,
+            "filed": "2025-07-30"
+          },
+          {
+            "year": "2026",
+            "value": 66987000000,
+            "filed": "2026-07-29"
+          }
+        ],
+        "shares": [
+          {
+            "year": "2021",
+            "value": 7608000000,
+            "filed": "2021-07-29"
+          },
+          {
+            "year": "2022",
+            "value": 7540000000,
+            "filed": "2022-07-28"
+          },
+          {
+            "year": "2023",
+            "value": 7472000000,
+            "filed": "2023-07-27"
+          },
+          {
+            "year": "2024",
+            "value": 7469000000,
+            "filed": "2024-07-30"
+          },
+          {
+            "year": "2025",
+            "value": 7465000000,
+            "filed": "2025-07-30"
+          },
+          {
+            "year": "2026",
+            "value": 7453000000,
+            "filed": "2026-07-29"
+          }
+        ]
+      },
+      "filings": [
+        {
+          "form": "10-K",
+          "filed": "2026-07-29",
+          "period": "2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-04-29",
+          "period": "2026-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2026-01-28",
+          "period": "2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-10-29",
+          "period": "2025-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/msft-20250930.htm"
+        },
+        {
+          "form": "10-K",
+          "filed": "2025-07-30",
+          "period": "2025-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+        },
+        {
+          "form": "10-Q",
+          "filed": "2025-04-30",
+          "period": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm"
+        }
+      ],
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+    }
+  ],
+  "errors": []
+}
