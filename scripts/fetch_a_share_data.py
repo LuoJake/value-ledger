@@ -6,6 +6,7 @@ import re
 import subprocess
 import time
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -15,10 +16,10 @@ UA = "Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/valu
 CN_TZ = timezone(timedelta(hours=8))
 
 
-def curl_json(url, *, referer, data=None, attempts=3):
+def curl_json(url, *, referer, data=None, attempts=2):
     command = [
         "curl", "--http1.1", "--fail", "--silent", "--show-error",
-        "--location", "--connect-timeout", "8", "--max-time", "25",
+        "--location", "--connect-timeout", "6", "--max-time", "15",
         "--user-agent", UA, "--header", f"Referer: {referer}",
     ]
     if data is not None:
@@ -28,7 +29,7 @@ def curl_json(url, *, referer, data=None, attempts=3):
         try:
             result = subprocess.run(
                 command, capture_output=True, text=True, encoding="utf-8", errors="strict",
-                timeout=45, check=True,
+                timeout=20, check=True,
             )
             return json.loads(result.stdout.lstrip("\ufeff"))
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired, json.JSONDecodeError):
@@ -182,15 +183,18 @@ def build_company(company):
 
 def main():
     config = json.loads((DATA_DIR / "watchlist.json").read_text(encoding="utf-8"))
-    companies, errors = [], []
-    for company in config["companies"]:
-        try:
-            companies.append(build_company(company))
-            print(f'Fetched {company["code"]} {company["name"]}')
-        except Exception as exc:
-            errors.append({"code": company["code"], "name": company["name"], "error": str(exc)})
-            print(f'Failed {company["code"]}: {exc}')
-        time.sleep(0.3)
+    companies_by_code, errors = {}, []
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {executor.submit(build_company, company): company for company in config["companies"]}
+        for future in as_completed(futures):
+            company = futures[future]
+            try:
+                companies_by_code[company["code"]] = future.result()
+                print(f'Fetched {company["code"]} {company["name"]}')
+            except Exception as exc:
+                errors.append({"code": company["code"], "name": company["name"], "error": str(exc)})
+                print(f'Failed {company["code"]}: {exc}')
+    companies = [companies_by_code[item["code"]] for item in config["companies"] if item["code"] in companies_by_code]
     output = {
         "generatedAt": datetime.now(CN_TZ).isoformat(),
         "market": "中国 A 股",
