@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import {
   Activity, AlertTriangle, BarChart3, Bell, BookOpen, Check, ChevronRight, CircleHelp,
   ExternalLink, FileCheck2, Landmark, Menu, Newspaper, Plus, RefreshCw,
-  Search, Settings, ShieldCheck, X,
+  Search, Settings, ShieldCheck, Trash2, X,
 } from 'lucide-react';
 import {
   Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis,
@@ -109,8 +109,128 @@ function announcementTag(title) {
   return ['一般公告', 'general'];
 }
 
+function exchangeFor(code) {
+  if (/^(6|68)/.test(code)) return 'SH';
+  if (/^(4|8|9)/.test(code)) return 'BJ';
+  return 'SZ';
+}
+
+async function fetchCustomCompany(code) {
+  const exchange = exchangeFor(code);
+  const secucode = `${code}.${exchange}`;
+  const params = new URLSearchParams({
+    reportName: 'RPT_F10_FINANCE_MAINFINADATA', columns: 'ALL',
+    filter: `(SECUCODE="${secucode}")(REPORT_TYPE="年报")`,
+    pageNumber: '1', pageSize: '8', sortTypes: '-1', sortColumns: 'REPORT_DATE',
+  });
+  const sourceUrl = `https://datacenter.eastmoney.com/securities/api/data/v1/get?${params}`;
+  const response = await fetch(sourceUrl);
+  if (!response.ok) throw new Error(`数据接口返回 ${response.status}`);
+  const payload = await response.json();
+  const rows = payload?.result?.data;
+  if (!rows?.length) throw new Error('未找到该 A 股代码的年度财务数据');
+  const type = ['银行', '保险', '证券'].some((word) => (rows[0].ORG_TYPE || '').includes(word)) ? 'financial' : 'industrial';
+  const series = rows.slice(0, 6).reverse().map((row) => ({
+    year: String(row.REPORT_YEAR || row.REPORT_DATE.slice(0, 4)), reportDate: row.REPORT_DATE?.slice(0, 10), noticeDate: row.NOTICE_DATE?.slice(0, 10),
+    revenue: row.TOTALOPERATEREVE, netProfit: row.PARENTNETPROFIT,
+    operatingCashFlow: type === 'financial' ? null : row.NETCASH_OPERATE_PK,
+    roe: row.ROEJQ, debtRatio: row.ZCFZL, eps: row.EPSJB,
+    bookValuePerShare: row.BPS, grossMargin: type === 'financial' ? null : row.XSMLL,
+  }));
+  const latest = series.at(-1);
+  const officialUrl = exchange === 'SH'
+    ? `https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=${code}`
+    : exchange === 'SZ' ? `https://www.cninfo.com.cn/new/commonUrl/pageOfSearch?url=disclosure/list/search&keywords=${code}` : 'https://www.bse.cn/disclosure/announcement.html';
+  return {
+    code, exchange, name: rows[0].SECURITY_NAME_ABBR, type, symbol: secucode,
+    exchangeName: exchange === 'SH' ? '上海证券交易所' : exchange === 'SZ' ? '深圳证券交易所' : '北京证券交易所',
+    metrics: Object.fromEntries(['revenue','netProfit','operatingCashFlow','roe','debtRatio','eps','bookValuePerShare','grossMargin'].map((key) => [key, latest[key]])),
+    series, announcements: [], dataUpdatedAt: new Date().toISOString(), coverage: 'browser',
+    quote: { price: null, previousClose: null, changePct: null, marketCap: null, peTtm: null, pb: null, retrievedAt: new Date().toISOString(), provider: '东方财富行情接口', freshness: '浏览器新增股票暂不抓取行情', sourceUrl: `https://quote.eastmoney.com/${exchange.toLowerCase()}${code}.html` },
+    verification: { status: 'unmatched', message: '浏览器临时接入，尚未自动匹配官方年报', annualReport: null, officialSearchUrl: officialUrl },
+    financialSource: { name: '东方财富结构化财务数据', url: sourceUrl, role: '计算辅助；请在交易所或巨潮检索并核对原文' },
+  };
+}
+
+function investorLenses(company, analysis) {
+  const pe = company.quote?.peTtm;
+  const pb = company.quote?.pb;
+  const roeAvg = average(company.series.map((row) => row.roe).filter((value) => value != null));
+  const revenueCagr = cagr(company.series, 'revenue');
+  const profitCagr = cagr(company.series, 'netProfit');
+  const stableProfit = company.series.every((row) => row.netProfit > 0);
+  const cashRows = company.series.slice(-3).filter((row) => row.operatingCashFlow != null && row.netProfit > 0);
+  const cashRatio = average(cashRows.map((row) => row.operatingCashFlow / row.netProfit));
+  const priceText = pe == null ? '当前估值数据不足' : `当前约 ${pe.toFixed(1)} 倍 PE${pb == null ? '' : `、${pb.toFixed(1)} 倍 PB`}`;
+  return [
+    {
+      name: '格雷厄姆框架', label: '安全边际与防守性',
+      verdict: stableProfit && pe != null && pe <= 15 ? '具备继续做防守型估值的基础' : '暂不能仅凭低估值下结论',
+      text: `${priceText}。${stableProfit ? '六年归母利润均为正' : '历史利润存在亏损'}；仍缺流动资产、有息负债和清算价值数据，不能声称满足格雷厄姆选股标准。`,
+    },
+    {
+      name: '巴菲特框架', label: '好生意与长期资本回报',
+      verdict: roeAvg >= 15 && (cashRatio == null || cashRatio >= .8) ? '财务特征值得继续研究护城河' : '财务质量尚未形成明确优势',
+      text: `六年平均 ROE ${percent(roeAvg)}${cashRatio == null ? '' : `，近三年利润现金含量 ${cashRatio.toFixed(2)} 倍`}。品牌、定价权、管理层诚信无法从报表数字自动确认。`,
+    },
+    {
+      name: '段永平框架', label: '商业模式与本分',
+      verdict: analysis.risks ? '先理解异常，不因便宜而买入' : '数字未见强异常，继续弄懂生意',
+      text: `报表只能帮助排雷，无法回答“商业模式是否容易理解、企业文化是否可靠”。${priceText}，买入前仍要说明未来现金流从哪里来。`,
+    },
+    {
+      name: '成长股框架', label: '增长质量与估值匹配',
+      verdict: revenueCagr >= 15 && profitCagr >= 15 ? '历史增长达到高成长观察区间' : '历史增速不属于典型高成长',
+      text: `六年营收 CAGR ${percent(revenueCagr)}、利润 CAGR ${percent(profitCagr)}。${pe != null && profitCagr > 0 ? `PE/历史利润增速约 ${(pe / profitCagr).toFixed(2)}，只作粗筛。` : '缺少有效估值，暂不计算增长与价格匹配。'}还需核查增长空间、再投资回报和竞争格局。`,
+      growth: true,
+    },
+  ];
+}
+
 function Metric({ label, value, note, tone = '' }) {
   return <div className="metric"><div className="metric-label">{label}<CircleHelp size={13}/></div><strong className={tone}>{value}</strong><span>{note}</span></div>;
+}
+
+function MacroView({ macro }) {
+  if (!macro || macro.error) return <section className="macro-empty"><AlertTriangle/><h2>宏观数据暂不可用</h2><p>不会使用估算值填补官方数据缺口。</p></section>;
+  const gdp = macro.gdp?.at(-1) || {};
+  const cpi = macro.cpi?.at(-1) || {};
+  const pmi = macro.pmi?.at(-1) || {};
+  const money = macro.money?.at(-1) || {};
+  const gap = money.BASIC_CURRENCY_SAME != null && money.CURRENCY_SAME != null ? money.BASIC_CURRENCY_SAME - money.CURRENCY_SAME : null;
+  const observations = [
+    {
+      title: '经济增长', value: `${gdp.SUM_SAME?.toFixed(1) ?? '—'}%`, date: gdp.REPORT_DATE?.slice(0, 7),
+      state: gdp.SUM_SAME >= 5 ? '稳健' : gdp.SUM_SAME >= 4 ? '温和' : '偏弱',
+      plain: `GDP 同比反映全社会最终产出的增速。当前读数说明总量增长${gdp.SUM_SAME >= 5 ? '仍有韧性' : '需要观察后续修复'}，但不能直接推导股市涨跌。`,
+      mechanism: '企业盈利取决于名义需求、行业结构和竞争格局，不只取决于 GDP 一个数字。',
+    },
+    {
+      title: '物价与需求', value: `${cpi.NATIONAL_SAME?.toFixed(1) ?? '—'}%`, date: cpi.REPORT_DATE?.slice(0, 7),
+      state: cpi.NATIONAL_SAME < 1 ? '低通胀' : cpi.NATIONAL_SAME > 3 ? '偏高' : '温和',
+      plain: `CPI 同比约 ${cpi.NATIONAL_SAME?.toFixed(1) ?? '—'}%，居民端价格压力${cpi.NATIONAL_SAME < 1 ? '较弱，可能对应需求偏谨慎或供给充足' : '处于可观察区间'}。`,
+      mechanism: '低通胀有利于购买力，却也可能意味着企业提价困难；要结合收入、就业和 PPI 判断。',
+    },
+    {
+      title: '企业景气', value: pmi.MAKE_INDEX?.toFixed(1) ?? '—', date: pmi.REPORT_DATE?.slice(0, 7),
+      state: pmi.MAKE_INDEX >= 50 ? '扩张区间' : '收缩区间',
+      plain: `制造业 PMI 位于 ${pmi.MAKE_INDEX >= 50 ? '50 以上，受访企业活动总体扩张' : '50 以下，企业订单与生产总体偏弱'}。`,
+      mechanism: 'PMI 是环比方向指标，50 表示与上月大致持平，不代表同比增长为零。',
+    },
+    {
+      title: '货币活性', value: `M2 ${money.BASIC_CURRENCY_SAME?.toFixed(1) ?? '—'}%`, date: money.REPORT_DATE?.slice(0, 7),
+      state: gap > 4 ? '活性偏弱' : '剪刀差温和',
+      plain: `M2 同比 ${money.BASIC_CURRENCY_SAME?.toFixed(1) ?? '—'}%，M1 同比 ${money.CURRENCY_SAME?.toFixed(1) ?? '—'}%，二者相差 ${gap?.toFixed(1) ?? '—'} 个百分点。`,
+      mechanism: 'M2 快于 M1 常表示存款增长快于企业活期资金，钱存在体系里，但交易和投资意愿未必同步增强。',
+    },
+  ];
+  return <section className="macro-view">
+    <div className="macro-title"><div><span className="kicker">事实、机制、推断分开</span><h1>中国宏观温度计</h1><p>宏观数据用于理解经营环境，不用于预测短期指数点位。</p></div><Landmark/></div>
+    <div className="macro-summary"><strong>当前组合</strong><span>增长温和 · {cpi.NATIONAL_SAME < 1 ? '价格偏弱' : '物价温和'} · 制造业{pmi.MAKE_INDEX >= 50 ? '扩张' : '承压'} · 货币{gap > 4 ? '活性不足' : '传导尚可'}</span><small>这是规则解释，不是政策预测或投资建议。</small></div>
+    <div className="macro-grid">{observations.map((item) => <article key={item.title}><div><span>{item.title}</span><b>{item.state}</b></div><strong>{item.value}</strong><small>数据期 {item.date}</small><p>{item.plain}</p><div className="mechanism"><b>本质</b>{item.mechanism}</div></article>)}</div>
+    <div className="panel macro-impact"><div className="panel-head"><div><span className="kicker">传导路径</span><h2>对企业研究意味着什么</h2></div></div><div><span>消费企业</span><p>低通胀时重点看销量、客单价和渠道库存，不能把提价当作当然。</p></div><div><span>制造与成长</span><p>PMI 偏弱时区分行业逆势份额提升与单纯依赖行业景气；高增长仍要有现金流验证。</p></div><div><span>银行与保险</span><p>货币宽松不等于利润上升，还要看净息差、信用需求、资产质量和长端利率。</p></div></div>
+    <div className="macro-sources"><ShieldCheck/><span><strong>来源核验</strong>结构化数据由东方财富整理；原始发布以国家统计局和中国人民银行为准。</span>{macro.sources?.map((source) => <a key={source.name} href={source.url} target="_blank" rel="noreferrer">{source.name}<ExternalLink/></a>)}</div>
+  </section>;
 }
 
 function EmptyState() {
@@ -122,6 +242,8 @@ function App() {
   const [loadError, setLoadError] = useState(false);
   const [selected, setSelected] = useState(localStorage.getItem('vl-cn-selected') || '600519');
   const [watchlist, setWatchlist] = useState(() => JSON.parse(localStorage.getItem('vl-cn-watchlist') || '["600519","000858","000333","600036"]'));
+  const [customCompanies, setCustomCompanies] = useState(() => JSON.parse(localStorage.getItem('vl-cn-custom-companies') || '[]'));
+  const [adding, setAdding] = useState(false);
   const [query, setQuery] = useState('');
   const [tab, setTab] = useState('overview');
   const [menuOpen, setMenuOpen] = useState(false);
@@ -138,35 +260,67 @@ function App() {
       return response.json();
     }).then((data) => {
       setDataset(data);
-      if (!data.companies.some((item) => item.code === selected) && data.companies.length) setSelected(data.companies[0].code);
+      if (!data.companies.some((item) => item.code === selected) && !customCompanies.some((item) => item.code === selected) && data.companies.length) setSelected(data.companies[0].code);
     }).catch(() => setLoadError(true));
   }, []);
   useEffect(() => localStorage.setItem('vl-cn-watchlist', JSON.stringify(watchlist)), [watchlist]);
+  useEffect(() => localStorage.setItem('vl-cn-custom-companies', JSON.stringify(customCompanies)), [customCompanies]);
   useEffect(() => localStorage.setItem('vl-cn-selected', selected), [selected]);
   useEffect(() => localStorage.setItem('vl-cn-checks', JSON.stringify(checks)), [checks]);
   useEffect(() => localStorage.setItem('vl-cn-notes', JSON.stringify(notes)), [notes]);
+  useEffect(() => {
+    if (!customCompanies.length) return undefined;
+    let cancelled = false;
+    Promise.allSettled(customCompanies.map((item) => fetchCustomCompany(item.code))).then((results) => {
+      if (cancelled) return;
+      setCustomCompanies((current) => current.map((item, index) =>
+        results[index]?.status === 'fulfilled' ? results[index].value : item
+      ));
+    });
+    return () => { cancelled = true; };
+  }, []);
 
-  const company = dataset?.companies.find((item) => item.code === selected) || dataset?.companies[0];
+  const allCompanies = useMemo(() => [...(dataset?.companies || []), ...customCompanies.filter((custom) => !dataset?.companies.some((item) => item.code === custom.code))], [dataset, customCompanies]);
+  const company = allCompanies.find((item) => item.code === selected) || allCompanies.find((item) => item.code === watchlist[0]) || allCompanies[0];
   const quote = QUOTES[Math.floor(Date.now() / 86400000) % QUOTES.length];
   const latestYear = company?.series.at(-1)?.year;
   const companyChecks = checks[selected] || [];
   const chartData = useMemo(() => company?.series || [], [company]);
   const analysis = useMemo(() => company ? analyzeCompany(company) : null, [company]);
+  const lenses = useMemo(() => company && analysis ? investorLenses(company, analysis) : [], [company, analysis]);
   const estimatedValue = Number(normalizedEps) * Number(multiple);
   const maxBuy = estimatedValue * (1 - Number(margin) / 100);
   const choose = (code) => { setSelected(code); setTab('overview'); setMenuOpen(false); };
-  const addTicker = () => {
+  const addTicker = async () => {
     const code = query.trim();
     if (!/^\d{6}$/.test(code)) return alert('请输入 6 位 A 股代码。');
-    if (!dataset?.companies.some((item) => item.code === code)) return alert('该股票尚未进入本站数据集，请先在 public/data/watchlist.json 配置后运行更新。');
-    setWatchlist((items) => [...new Set([...items, code])]); setQuery(''); choose(code);
+    const existing = allCompanies.find((item) => item.code === code);
+    if (existing) {
+      setWatchlist((items) => [...new Set([...items, code])]); setQuery(''); choose(code); return;
+    }
+    setAdding(true);
+    try {
+      const fetched = await fetchCustomCompany(code);
+      setCustomCompanies((items) => [...items.filter((item) => item.code !== code), fetched]);
+      setWatchlist((items) => [...new Set([...items, code])]);
+      setSelected(code); setQuery(''); setTab('overview'); setMenuOpen(false);
+    } catch (error) {
+      alert(`添加失败：${error.message}。请确认代码存在并稍后重试。`);
+    } finally {
+      setAdding(false);
+    }
+  };
+  const removeTicker = (code) => {
+    const remaining = watchlist.filter((item) => item !== code);
+    setWatchlist(remaining);
+    if (selected === code) setSelected(remaining[0] || '');
   };
   const toggleCheck = (index) => setChecks((state) => ({ ...state, [selected]: companyChecks.includes(index) ? companyChecks.filter((item) => item !== index) : [...companyChecks, index] }));
   const setNote = (key, value) => setNotes((state) => ({ ...state, [selected]: { ...state[selected], [key]: value } }));
 
   if (loadError) return <EmptyState/>;
   if (!dataset || !company) return <div className="loading"><RefreshCw className="spin"/>正在核验 A 股披露数据…</div>;
-  const generated = new Date(dataset.generatedAt);
+  const generated = new Date(company.dataUpdatedAt || dataset.generatedAt);
   const ageHours = Math.max(0, Math.floor((Date.now() - generated) / 3600000));
   const isFinancial = company.type === 'financial';
 
@@ -174,25 +328,27 @@ function App() {
     <aside className={menuOpen ? 'sidebar open' : 'sidebar'}>
       <div className="brand"><div className="brand-mark">衡</div><div><strong>衡石</strong><span>A-SHARE LEDGER</span></div></div>
       <nav className="main-nav">
-        <button className={tab === 'overview' ? 'active' : ''} onClick={() => setTab('overview')}><BarChart3/>研究台</button>
-        <button className={tab === 'analysis' ? 'active' : ''} onClick={() => setTab('analysis')}><Activity/>财报体检</button>
-        <button className={tab === 'news' ? 'active' : ''} onClick={() => setTab('news')}><Newspaper/>及时披露</button>
-        <button className={tab === 'discipline' ? 'active' : ''} onClick={() => setTab('discipline')}><ShieldCheck/>投资纪律</button>
-        <button className={tab === 'filings' ? 'active' : ''} onClick={() => setTab('filings')}><BookOpen/>原始公告</button>
+        <button className={tab === 'overview' ? 'active' : ''} onClick={() => { setTab('overview'); setMenuOpen(false); }}><BarChart3/>研究台</button>
+        <button className={tab === 'analysis' ? 'active' : ''} onClick={() => { setTab('analysis'); setMenuOpen(false); }}><Activity/>财报体检</button>
+        <button className={tab === 'news' ? 'active' : ''} onClick={() => { setTab('news'); setMenuOpen(false); }}><Newspaper/>及时披露</button>
+        <button className={tab === 'discipline' ? 'active' : ''} onClick={() => { setTab('discipline'); setMenuOpen(false); }}><ShieldCheck/>投资纪律</button>
+        <button className={tab === 'filings' ? 'active' : ''} onClick={() => { setTab('filings'); setMenuOpen(false); }}><BookOpen/>原始公告</button>
+        <button className={tab === 'macro' ? 'active' : ''} onClick={() => { setTab('macro'); setMenuOpen(false); }}><Landmark/>宏观观察</button>
       </nav>
-      <div className="watch-head"><span>我的 A 股自选</span><span>{watchlist.length}</span></div>
-      <div className="ticker-add"><Search size={15}/><input value={query} onChange={(e) => setQuery(e.target.value.replace(/\D/g, '').slice(0, 6))} onKeyDown={(e) => e.key === 'Enter' && addTicker()} placeholder="输入 6 位代码"/><button title="添加自选" onClick={addTicker}><Plus size={16}/></button></div>
+      <div className="watch-head"><span>我的 A 股自选</span><button title="清空自选" onClick={() => { setWatchlist([]); setSelected(''); }}><span>{watchlist.length}</span><Trash2 size={12}/></button></div>
+      <div className="ticker-add"><Search size={15}/><input value={query} onChange={(e) => setQuery(e.target.value.replace(/\D/g, '').slice(0, 6))} onKeyDown={(e) => e.key === 'Enter' && !adding && addTicker()} placeholder="输入任意 6 位代码"/><button title="添加自选" disabled={adding} onClick={addTicker}>{adding ? <RefreshCw className="spin" size={15}/> : <Plus size={16}/>}</button></div>
       <div className="watch-items">{watchlist.map((code) => {
-        const item = dataset.companies.find((row) => row.code === code);
-        return <button key={code} className={company.code === code ? 'selected' : ''} onClick={() => choose(code)}><span className="ticker-logo">{item?.name?.[0] || code[0]}</span><span><strong>{item?.name || code}</strong><small>{code} · {item?.exchange === 'SH' ? '沪市' : '深市'}</small></span><ChevronRight size={15}/></button>;
+        const item = allCompanies.find((row) => row.code === code);
+        return <div className={`watch-row ${company.code === code ? 'selected' : ''}`} key={code}><button onClick={() => choose(code)}><span className="ticker-logo">{item?.name?.[0] || code[0]}</span><span><strong>{item?.name || code}</strong><small>{code} · {item?.exchange === 'SH' ? '沪市' : item?.exchange === 'BJ' ? '北交所' : '深市'}</small></span></button><button className="watch-remove" title={`删除 ${item?.name || code}`} onClick={() => removeTicker(code)}><Trash2 size={14}/></button></div>;
       })}</div>
       <div className="source-card"><Landmark size={17}/><div><strong>官方披露校验</strong><span>上交所 · 巨潮资讯</span></div><ShieldCheck size={16}/></div>
       <button className="settings"><Settings size={17}/>设置与数据边界</button>
     </aside>
 
     <section className="workspace">
-      <header className="topbar"><button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}><Menu/></button><div className="breadcrumb">A 股研究台 <ChevronRight size={14}/> <strong>{company.code}</strong></div><div className={`freshness ${ageHours > 4 ? 'aged' : ''}`}><span/>数据生成于 {generated.toLocaleString('zh-CN', { hour12: false })} · {ageHours ? `${ageHours} 小时前` : '1 小时内'}</div></header>
+      <header className="topbar"><button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}><Menu/></button><div className="breadcrumb">{tab === 'macro' ? '宏观观察' : <>A 股研究台 <ChevronRight size={14}/> <strong>{company.code}</strong></>}</div><div className={`freshness ${ageHours > 4 ? 'aged' : ''}`}><span/>数据生成于 {generated.toLocaleString('zh-CN', { hour12: false })} · {ageHours ? `${ageHours} 小时前` : '1 小时内'}</div></header>
       <main>
+        {tab === 'macro' ? <MacroView macro={dataset.macro}/> : <>
         <section className="company-head">
           <div><div className="eyebrow">{company.exchangeName} · {company.symbol}</div><h1>{company.name}</h1><div className="company-meta"><b>{company.code}</b><span>{isFinancial ? '金融企业口径' : '一般企业口径'}</span>{company.verification.annualReport ? <a href={company.verification.annualReport.url} target="_blank" rel="noreferrer">{latestYear} 年报原文 <ExternalLink size={13}/></a> : <span className="warn-text">年报待人工核验</span>}</div></div>
           <div className="quote"><span>今日提醒</span><q>{quote[0]}</q><small>— {quote[1]}</small></div>
@@ -229,16 +385,18 @@ function App() {
           <div className="analysis-heading"><div><span className="kicker">规则驱动 · 可复核</span><h2>{company.name} {latestYear} 年报体检</h2><p>{analysis.summary}</p></div><div className={analysis.risks ? 'analysis-state risk' : 'analysis-state'}><strong>{analysis.risks}</strong><span>项强关注</span></div></div>
           <div className="analysis-disclaimer"><ShieldCheck/><span><b>这是财务指标分析，不是 AI 阅读年报全文。</b>结论来自六年结构化数据；审计意见、附注、关联交易和管理层表述仍需打开原始 PDF 核验。</span></div>
           <div className="signal-grid">{analysis.signals.map((signal) => <article key={signal.title} className={`signal ${signal.status}`}><div><span className="signal-dot"/><small>{signal.status === 'risk' ? '需要解释' : signal.status === 'good' ? '表现稳健' : '继续观察'}</small></div><h3>{signal.title}</h3><strong>{signal.value}</strong><p>{signal.detail}</p></article>)}</div>
-          <div className="analysis-lower"><div className="panel questions"><div className="panel-head"><div><span className="kicker">不要急着下结论</span><h2>下一步必须回答</h2></div></div>{analysis.questions.map((question, index) => <div className="question" key={question}><span>{String(index + 1).padStart(2, '0')}</span><p>{question}</p></div>)}</div><div className="panel evidence"><div className="panel-head"><div><span className="kicker">证据入口</span><h2>核验材料</h2></div></div><a href={company.verification.annualReport?.url} target="_blank" rel="noreferrer"><FileCheck2/><span><strong>{latestYear} 年年度报告</strong><small>{company.verification.annualReport?.source || '待匹配'}</small></span><ExternalLink/></a><button onClick={() => setTab('news')}><Bell/><span><strong>近期重要披露</strong><small>{analysis.riskAnnouncements.length} 条风险类标题待核查</small></span><ChevronRight/></button></div></div>
+          <section className="lens-section"><div className="lens-heading"><div><span className="kicker">公开方法论推演</span><h2>四种投资框架怎么看</h2></div><p>不是投资者本人观点，也不代表他们会买入或卖出该公司。</p></div><div className="lens-grid">{lenses.map((lens) => <article key={lens.name} className={lens.growth ? 'growth' : ''}><span>{lens.label}</span><h3>{lens.name}</h3><strong>{lens.verdict}</strong><p>{lens.text}</p></article>)}</div></section>
+          <div className="analysis-lower"><div className="panel questions"><div className="panel-head"><div><span className="kicker">不要急着下结论</span><h2>下一步必须回答</h2></div></div>{analysis.questions.map((question, index) => <div className="question" key={question}><span>{String(index + 1).padStart(2, '0')}</span><p>{question}</p></div>)}</div><div className="panel evidence"><div className="panel-head"><div><span className="kicker">证据入口</span><h2>核验材料</h2></div></div><a href={company.verification.annualReport?.url || company.verification.officialSearchUrl} target="_blank" rel="noreferrer"><FileCheck2/><span><strong>{company.verification.annualReport ? `${latestYear} 年年度报告` : '前往官方披露平台核验'}</strong><small>{company.verification.annualReport?.source || '浏览器新增股票尚未自动匹配'}</small></span><ExternalLink/></a><button onClick={() => setTab('news')}><Bell/><span><strong>近期重要披露</strong><small>{company.announcements.length ? `${analysis.riskAnnouncements.length} 条风险类标题待核查` : '该股票暂未接入公告抓取'}</small></span><ChevronRight/></button></div></div>
         </section>}
 
-        {tab === 'news' && <section className="panel news-feed"><div className="panel-head"><div><span className="kicker">官方披露优先</span><h2>{company.name} · 最新公告</h2></div><span className="source-stamp"><Bell size={13}/>每 2 小时抓取</span></div>{company.announcements.map((item, index) => { const [tag, kind] = announcementTag(item.title); return <a key={`${item.date}-${index}`} href={item.url} target="_blank" rel="noreferrer"><time>{item.date}<b className={`news-tag ${kind}`}>{tag}</b></time><span><strong>{item.title}</strong><small>{item.source} · 仅按标题分类</small></span><ExternalLink size={15}/></a>; })}</section>}
+        {tab === 'news' && <section className="panel news-feed"><div className="panel-head"><div><span className="kicker">官方披露优先</span><h2>{company.name} · 最新公告</h2></div><span className="source-stamp"><Bell size={13}/>每 2 小时抓取</span></div>{company.announcements.map((item, index) => { const [tag, kind] = announcementTag(item.title); return <a key={`${item.date}-${index}`} href={item.url} target="_blank" rel="noreferrer"><time>{item.date}<b className={`news-tag ${kind}`}>{tag}</b></time><span><strong>{item.title}</strong><small>{item.source} · 仅按标题分类</small></span><ExternalLink size={15}/></a>; })}{!company.announcements.length && <div className="news-empty"><AlertTriangle/><h3>该股票的官方公告尚未接入自动抓取</h3><p>浏览器只能直接取得结构化财务数据。请先到官方披露平台核验，本站不会用媒体新闻替代法定公告。</p><a href={company.verification.officialSearchUrl} target="_blank" rel="noreferrer">前往官方披露平台 <ExternalLink/></a></div>}</section>}
 
-        {tab === 'filings' && <section className="filing-focus"><div className="panel annual-report-card"><FileCheck2/><span className="kicker">结构化数据核验锚点</span><h2>{latestYear} 年年度报告</h2>{company.verification.annualReport ? <><p>{company.verification.annualReport.title}</p><a href={company.verification.annualReport.url} target="_blank" rel="noreferrer">打开官方 PDF <ExternalLink size={15}/></a><small>{company.verification.annualReport.source} · {company.verification.annualReport.date}</small></> : <><p>当前未能自动匹配官方年报。请勿仅依据结构化指标决策。</p><span className="warn-text">需要人工复核</span></>}</div><div className="panel source-rules"><span className="kicker">数据分层</span><h2>什么可以相信，如何使用</h2><div><b>一级 · 法定披露</b><p>交易所与巨潮资讯 PDF，是最终核验依据。</p></div><div><b>二级 · 结构化财务</b><p>用于图表与筛选，存在口径映射风险，已链接原始年报交叉核验。</p></div><div><b>三级 · 行情快照</b><p>仅供估值参考，可能延迟或缺失，不用于交易。</p></div></div></section>}
+        {tab === 'filings' && <section className="filing-focus"><div className="panel annual-report-card"><FileCheck2/><span className="kicker">结构化数据核验锚点</span><h2>{latestYear} 年年度报告</h2>{company.verification.annualReport ? <><p>{company.verification.annualReport.title}</p><a href={company.verification.annualReport.url} target="_blank" rel="noreferrer">打开官方 PDF <ExternalLink size={15}/></a><small>{company.verification.annualReport.source} · {company.verification.annualReport.date}</small></> : <><p>当前未能自动匹配官方年报。请勿仅依据结构化指标决策。</p><a href={company.verification.officialSearchUrl} target="_blank" rel="noreferrer">前往官方披露平台 <ExternalLink size={15}/></a><small className="warn-text">需要人工搜索并复核报告原文</small></>}</div><div className="panel source-rules"><span className="kicker">数据分层</span><h2>什么可以相信，如何使用</h2><div><b>一级 · 法定披露</b><p>交易所与巨潮资讯 PDF，是最终核验依据。</p></div><div><b>二级 · 结构化财务</b><p>用于图表与筛选，存在口径映射风险，已链接原始年报交叉核验。</p></div><div><b>三级 · 行情快照</b><p>仅供估值参考，可能延迟或缺失，不用于交易。</p></div></div></section>}
 
         {tab === 'valuation' && <section className="valuation-grid"><div className="panel calculator"><div className="panel-head"><div><span className="kicker">保守假设优先</span><h2>每股收益估值草稿</h2></div></div><div className="field-grid"><label>参考价格（手工）<div><span>¥</span><input type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="0.00"/></div></label><label>正常化每股收益<div><span>¥</span><input type="number" value={normalizedEps} onChange={(e) => setNormalizedEps(e.target.value)} placeholder={`年报 EPS ${company.metrics.eps ?? '—'}`}/></div></label><label>合理市盈率<div><input type="number" value={multiple} onChange={(e) => setMultiple(e.target.value)}/><span>倍</span></div></label><label>安全边际<div><input type="number" value={margin} onChange={(e) => setMargin(e.target.value)}/><span>%</span></div></label></div><div className="valuation-result"><span>最高买入价</span><strong>{Number.isFinite(maxBuy) && maxBuy > 0 ? `¥${maxBuy.toFixed(2)}` : '—'}</strong><small>估算价值 {estimatedValue > 0 ? `¥${estimatedValue.toFixed(2)}` : '—'} · 输入不会上传</small></div></div><div className="panel caution"><AlertTriangle/><h2>A 股估值的额外陷阱</h2><p>先辨别利润是经营所得、投资收益还是公允价值变动。周期股不能直接把景气高点利润乘静态市盈率。</p><p>分红税、再融资、限售解禁、关联交易与控股股东行为，都应进入安全边际。</p></div></section>}
 
         {tab === 'discipline' && <section className="discipline-grid"><div className="panel checklist"><div className="panel-head"><div><span className="kicker">在按下买入之前</span><h2>A 股六项防错检查</h2></div><span>{companyChecks.length} / {CHECKS.length}</span></div>{CHECKS.map((item, index) => <button key={item} onClick={() => toggleCheck(index)} className={companyChecks.includes(index) ? 'done' : ''}><span>{companyChecks.includes(index) && <Check size={16}/>}</span>{item}</button>)}<div className="check-verdict">{companyChecks.length === CHECKS.length ? <><ShieldCheck/>检查完成。现在再问：如果明天停牌三年，我仍愿意成为股东吗？</> : <><AlertTriangle/>尚有 {CHECKS.length - companyChecks.length} 项未确认。看不懂也是一种明确结论。</>}</div></div><div className="panel principles"><span className="kicker">决策原则</span><h2>不做什么，比做什么更重要</h2>{QUOTES.slice(0,5).map(([text, author], index) => <blockquote key={text}><span>0{index + 1}</span><div><q>{text}</q><small>{author}</small></div></blockquote>)}</div></section>}
+        </>}
       </main>
       <footer>仅供研究，不构成投资建议 · 法定披露来源：上交所 / 巨潮资讯 · 结构化财务：东方财富 · 本地笔记不会上传</footer>
     </section>

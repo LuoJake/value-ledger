@@ -181,6 +181,39 @@ def build_company(company):
     }
 
 
+def macro_dataset():
+    definitions = {
+        "gdp": ("RPT_ECONOMY_GDP", 8, ["REPORT_DATE", "DOMESTICL_PRODUCT_BASE", "SUM_SAME"]),
+        "cpi": ("RPT_ECONOMY_CPI", 12, ["REPORT_DATE", "NATIONAL_SAME", "NATIONAL_SEQUENTIAL"]),
+        "pmi": ("RPT_ECONOMY_PMI", 12, ["REPORT_DATE", "MAKE_INDEX", "NMAKE_INDEX"]),
+        "money": ("RPT_ECONOMY_CURRENCY_SUPPLY", 12, ["REPORT_DATE", "BASIC_CURRENCY_SAME", "CURRENCY_SAME", "FREE_CASH_SAME"]),
+    }
+
+    def fetch_one(item):
+        key, (report, size, fields) = item
+        query = urllib.parse.urlencode({
+            "reportName": report, "columns": "ALL", "sortColumns": "REPORT_DATE",
+            "sortTypes": -1, "pageNumber": 1, "pageSize": size,
+        })
+        url = f"https://datacenter-web.eastmoney.com/api/data/v1/get?{query}"
+        payload = curl_json(url, referer="https://data.eastmoney.com/")
+        rows = payload.get("result", {}).get("data", [])
+        return key, [{field: row.get(field) for field in fields} for row in reversed(rows)]
+
+    output = {}
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = [executor.submit(fetch_one, item) for item in definitions.items()]
+        for future in as_completed(futures):
+            key, rows = future.result()
+            output[key] = rows
+    output["sources"] = [
+        {"name": "国家统计局", "url": "https://www.stats.gov.cn/sj/", "covers": "GDP、CPI、PMI 官方发布"},
+        {"name": "中国人民银行", "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/index.html", "covers": "货币供应量官方发布"},
+        {"name": "东方财富宏观数据", "url": "https://data.eastmoney.com/cjsj/", "covers": "结构化整理与自动计算"},
+    ]
+    return output
+
+
 def main():
     config = json.loads((DATA_DIR / "watchlist.json").read_text(encoding="utf-8"))
     companies_by_code, errors = {}, []
@@ -195,11 +228,18 @@ def main():
                 errors.append({"code": company["code"], "name": company["name"], "error": str(exc)})
                 print(f'Failed {company["code"]}: {exc}')
     companies = [companies_by_code[item["code"]] for item in config["companies"] if item["code"] in companies_by_code]
+    try:
+        macro = macro_dataset()
+        print("Fetched official-source macro indicators")
+    except Exception as exc:
+        macro = {"error": str(exc), "sources": []}
+        print(f"Macro data unavailable: {exc}")
     output = {
         "generatedAt": datetime.now(CN_TZ).isoformat(),
         "market": "中国 A 股",
         "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
         "companies": companies,
+        "macro": macro,
         "errors": errors,
     }
     (DATA_DIR / "a-share-data.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
