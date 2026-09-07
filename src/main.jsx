@@ -134,6 +134,11 @@ function App() {
         <div className="tabs">{[['overview','财务概览'],['news','及时披露'],['filings','原始年报'],['valuation','估值草稿'],['discipline','投资纪律']].map(([id, label]) => <button key={id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)}>{label}</button>)}</div>
 
         {tab === 'overview' && <>
+          <section className="market-snapshot">
+            <div><span>行情快照</span><strong>{company.quote.price == null ? '暂不可用' : `¥${Number(company.quote.price).toFixed(2)}`}</strong>{company.quote.changePct != null && <b className={company.quote.changePct >= 0 ? 'market-up' : 'market-down'}>{company.quote.changePct >= 0 ? '+' : ''}{company.quote.changePct.toFixed(2)}%</b>}</div>
+            <dl><div><dt>市盈率 TTM</dt><dd>{company.quote.peTtm == null ? '—' : `${company.quote.peTtm.toFixed(2)} 倍`}</dd></div><div><dt>市净率</dt><dd>{company.quote.pb == null ? '—' : `${company.quote.pb.toFixed(2)} 倍`}</dd></div></dl>
+            <a href={company.quote.sourceUrl} target="_blank" rel="noreferrer"><span>{company.quote.freshness}</span><small>抓取于 {new Date(company.quote.retrievedAt).toLocaleString('zh-CN', {hour12:false})}</small></a>
+          </section>
           <section className="data-trust"><div className={company.verification.status === 'matched' ? 'verified' : 'pending'}>{company.verification.status === 'matched' ? <FileCheck2/> : <AlertTriangle/>}<span><strong>{company.verification.message}</strong><small>结构化数据用于计算，投资结论以官方公告原文为准</small></span></div><a href={company.financialSource.url} target="_blank" rel="noreferrer">查看结构化数据源 <ExternalLink size={13}/></a></section>
           <section className="metrics-row a-share-metrics">
             <Metric label="营业总收入" value={money(company.metrics.revenue)} note={`${latestYear} 年报 · 人民币`}/>
