@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
-  AlertTriangle, BarChart3, Bell, BookOpen, Check, ChevronRight, CircleHelp,
+  Activity, AlertTriangle, BarChart3, Bell, BookOpen, Check, ChevronRight, CircleHelp,
   ExternalLink, FileCheck2, Landmark, Menu, Newspaper, Plus, RefreshCw,
   Search, Settings, ShieldCheck, X,
 } from 'lucide-react';
@@ -43,6 +43,71 @@ const cagr = (series, key) => {
   if (valid.length < 2) return null;
   return (Math.pow(valid.at(-1)[key] / valid[0][key], 1 / (valid.length - 1)) - 1) * 100;
 };
+
+const yoy = (latest, previous, key) => latest?.[key] != null && previous?.[key]
+  ? (latest[key] / previous[key] - 1) * 100 : null;
+const average = (values) => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+
+function analyzeCompany(company) {
+  const series = company.series || [];
+  const latest = series.at(-1) || {};
+  const previous = series.at(-2) || {};
+  const revenueYoy = yoy(latest, previous, 'revenue');
+  const profitYoy = yoy(latest, previous, 'netProfit');
+  const revenueCagr = cagr(series, 'revenue');
+  const profitCagr = cagr(series, 'netProfit');
+  const signals = [];
+  const questions = [];
+  const add = (title, value, detail, status = 'neutral') => signals.push({ title, value, detail, status });
+
+  const growthStatus = (revenueYoy != null && revenueYoy < 0) || (profitYoy != null && profitYoy < 0) ? 'risk' : revenueCagr >= 8 && profitCagr >= 8 ? 'good' : 'neutral';
+  add('增长质量', `营收 ${percent(revenueYoy)} / 利润 ${percent(profitYoy)}`, `最新年度同比；六年复合增速分别为 ${percent(revenueCagr)}、${percent(profitCagr)}。`, growthStatus);
+  if (revenueYoy != null && revenueYoy < 0) questions.push('营业收入为何下降：行业需求、价格、份额还是并表口径发生变化？');
+  if (profitYoy != null && revenueYoy != null && profitYoy < revenueYoy - 5) questions.push('利润增速明显落后收入，成本、费用或非经常项目发生了什么？');
+
+  const roeValues = series.map((row) => row.roe).filter((value) => value != null);
+  const roeAvg = average(roeValues);
+  const roeMin = roeValues.length ? Math.min(...roeValues) : null;
+  const roeStatus = roeAvg >= 15 && roeMin >= 10 ? 'good' : latest.roe != null && previous.roe != null && latest.roe < previous.roe - 3 ? 'risk' : 'neutral';
+  add('资本回报', `${percent(latest.roe)} ROE`, `六年平均 ${percent(roeAvg)}，最低 ${percent(roeMin)}；仍需检查高杠杆与回购对 ROE 的影响。`, roeStatus);
+  if (latest.roe != null && previous.roe != null && latest.roe < previous.roe - 3) questions.push('ROE 较上年明显回落，是利润率、周转率还是杠杆变化导致？');
+
+  if (company.type !== 'financial') {
+    const cashRatios = series.slice(-3).filter((row) => row.operatingCashFlow != null && row.netProfit > 0).map((row) => row.operatingCashFlow / row.netProfit);
+    const cashRatio = average(cashRatios);
+    const cashStatus = cashRatio == null ? 'neutral' : cashRatio >= .9 ? 'good' : cashRatio < .65 ? 'risk' : 'neutral';
+    add('利润现金含量', cashRatio == null ? '—' : `${cashRatio.toFixed(2)} 倍`, '近三年经营现金流 / 归母净利润平均值；低值需要检查应收、存货及预付款。', cashStatus);
+    if (cashRatio != null && cashRatio < .8) questions.push('近三年利润现金含量偏低，应收、存货或预付款是否持续占用现金？');
+
+    const debtDelta = latest.debtRatio != null && series.at(-3)?.debtRatio != null ? latest.debtRatio - series.at(-3).debtRatio : null;
+    add('资产负债结构', percent(latest.debtRatio), `较两年前${debtDelta == null ? '无法比较' : `${debtDelta >= 0 ? '上升' : '下降'} ${Math.abs(debtDelta).toFixed(1)} 个百分点`}。需结合有息负债而非只看总负债。`, debtDelta != null && debtDelta > 8 ? 'risk' : 'neutral');
+    if (debtDelta != null && debtDelta > 8) questions.push('资产负债率两年上升较快，新增负债用于扩产、并购还是维持经营？');
+
+    const marginDelta = latest.grossMargin != null && previous.grossMargin != null ? latest.grossMargin - previous.grossMargin : null;
+    add('毛利率韧性', percent(latest.grossMargin), `较上年${marginDelta == null ? '无法比较' : `${marginDelta >= 0 ? '上升' : '下降'} ${Math.abs(marginDelta).toFixed(1)} 个百分点`}。`, marginDelta != null && marginDelta < -2 ? 'risk' : marginDelta != null && marginDelta > 1 ? 'good' : 'neutral');
+    if (marginDelta != null && marginDelta < -2) questions.push('毛利率显著下滑，是降价、原料成本、产品结构还是竞争加剧？');
+  } else {
+    add('金融企业提示', '使用专属口径', '总负债率与经营现金流不用于一般企业式判断；应继续核查资本充足率、不良率、净息差或偿付能力。', 'neutral');
+    questions.push('金融企业需补读资本充足率、不良贷款率、拨备覆盖率或保险偿付能力指标。');
+  }
+
+  const riskAnnouncements = company.announcements.filter((item) => /减持|质押|诉讼|处罚|立案|问询|担保|关联交易/.test(item.title));
+  if (riskAnnouncements.length) questions.push(`近期有 ${riskAnnouncements.length} 条风险类公告标题，需逐份阅读原文并判断实质影响。`);
+  if (!questions.length) questions.push('量化指标暂未触发明显异常，仍需阅读审计意见、会计附注与管理层讨论。');
+  const risks = signals.filter((item) => item.status === 'risk').length;
+  const summary = risks
+    ? `最新年报触发 ${risks} 项关注信号。先解释异常，再讨论估值。`
+    : '主要量化指标未触发强风险信号，但这不等于公司没有风险。';
+  return { signals, questions, summary, risks, riskAnnouncements };
+}
+
+function announcementTag(title) {
+  if (/减持|质押|诉讼|处罚|立案|问询|担保|关联交易/.test(title)) return ['风险关注', 'risk'];
+  if (/年报|季报|业绩|审计/.test(title)) return ['财务报告', 'report'];
+  if (/分红|回购|增持|股权激励/.test(title)) return ['资本配置', 'capital'];
+  if (/董事|监事|高管|股东大会/.test(title)) return ['公司治理', 'governance'];
+  return ['一般公告', 'general'];
+}
 
 function Metric({ label, value, note, tone = '' }) {
   return <div className="metric"><div className="metric-label">{label}<CircleHelp size={13}/></div><strong className={tone}>{value}</strong><span>{note}</span></div>;
@@ -86,6 +151,7 @@ function App() {
   const latestYear = company?.series.at(-1)?.year;
   const companyChecks = checks[selected] || [];
   const chartData = useMemo(() => company?.series || [], [company]);
+  const analysis = useMemo(() => company ? analyzeCompany(company) : null, [company]);
   const estimatedValue = Number(normalizedEps) * Number(multiple);
   const maxBuy = estimatedValue * (1 - Number(margin) / 100);
   const choose = (code) => { setSelected(code); setTab('overview'); setMenuOpen(false); };
@@ -109,6 +175,7 @@ function App() {
       <div className="brand"><div className="brand-mark">衡</div><div><strong>衡石</strong><span>A-SHARE LEDGER</span></div></div>
       <nav className="main-nav">
         <button className={tab === 'overview' ? 'active' : ''} onClick={() => setTab('overview')}><BarChart3/>研究台</button>
+        <button className={tab === 'analysis' ? 'active' : ''} onClick={() => setTab('analysis')}><Activity/>财报体检</button>
         <button className={tab === 'news' ? 'active' : ''} onClick={() => setTab('news')}><Newspaper/>及时披露</button>
         <button className={tab === 'discipline' ? 'active' : ''} onClick={() => setTab('discipline')}><ShieldCheck/>投资纪律</button>
         <button className={tab === 'filings' ? 'active' : ''} onClick={() => setTab('filings')}><BookOpen/>原始公告</button>
@@ -131,7 +198,7 @@ function App() {
           <div className="quote"><span>今日提醒</span><q>{quote[0]}</q><small>— {quote[1]}</small></div>
         </section>
 
-        <div className="tabs">{[['overview','财务概览'],['news','及时披露'],['filings','原始年报'],['valuation','估值草稿'],['discipline','投资纪律']].map(([id, label]) => <button key={id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)}>{label}</button>)}</div>
+        <div className="tabs">{[['overview','财务概览'],['analysis','财报体检'],['news','及时披露'],['filings','原始年报'],['valuation','估值草稿'],['discipline','投资纪律']].map(([id, label]) => <button key={id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)}>{label}</button>)}</div>
 
         {tab === 'overview' && <>
           <section className="market-snapshot">
@@ -140,6 +207,7 @@ function App() {
             <a href={company.quote.sourceUrl} target="_blank" rel="noreferrer"><span>{company.quote.freshness}</span><small>抓取于 {new Date(company.quote.retrievedAt).toLocaleString('zh-CN', {hour12:false})}</small></a>
           </section>
           <section className="data-trust"><div className={company.verification.status === 'matched' ? 'verified' : 'pending'}>{company.verification.status === 'matched' ? <FileCheck2/> : <AlertTriangle/>}<span><strong>{company.verification.message}</strong><small>结构化数据用于计算，投资结论以官方公告原文为准</small></span></div><a href={company.financialSource.url} target="_blank" rel="noreferrer">查看结构化数据源 <ExternalLink size={13}/></a></section>
+          <button className={`analysis-brief ${analysis.risks ? 'has-risk' : ''}`} onClick={() => setTab('analysis')}><Activity/><span><small>自动财报体检</small><strong>{analysis.summary}</strong></span><ChevronRight/></button>
           <section className="metrics-row a-share-metrics">
             <Metric label="营业总收入" value={money(company.metrics.revenue)} note={`${latestYear} 年报 · 人民币`}/>
             <Metric label="归母净利润" value={money(company.metrics.netProfit)} note={`${latestYear} 年报`}/>
@@ -157,7 +225,14 @@ function App() {
           <section className="panel memo"><div className="panel-head"><div><span className="kicker">持仓不是代码，是企业</span><h2>投资备忘录</h2></div><span className="autosave"><Check size={13}/>自动保存在本机</span></div><div className="memo-grid"><label>投资论点<textarea value={notes[selected]?.thesis || ''} onChange={(e) => setNote('thesis', e.target.value)} placeholder="公司的护城河、增长来源和资本回报是什么？"/></label><label>关键风险<textarea value={notes[selected]?.risks || ''} onChange={(e) => setNote('risks', e.target.value)} placeholder="什么事实会证明我的判断是错的？"/></label><label>跟踪指标<textarea value={notes[selected]?.signals || ''} onChange={(e) => setNote('signals', e.target.value)} placeholder="每个季度只跟踪哪些真正重要的指标？"/></label></div></section>
         </>}
 
-        {tab === 'news' && <section className="panel news-feed"><div className="panel-head"><div><span className="kicker">官方披露优先</span><h2>{company.name} · 最新公告</h2></div><span className="source-stamp"><Bell size={13}/>每 2 小时抓取</span></div>{company.announcements.map((item, index) => <a key={`${item.date}-${index}`} href={item.url} target="_blank" rel="noreferrer"><time>{item.date}</time><span><strong>{item.title}</strong><small>{item.source} · {item.type}</small></span><ExternalLink size={15}/></a>)}</section>}
+        {tab === 'analysis' && <section className="analysis-view">
+          <div className="analysis-heading"><div><span className="kicker">规则驱动 · 可复核</span><h2>{company.name} {latestYear} 年报体检</h2><p>{analysis.summary}</p></div><div className={analysis.risks ? 'analysis-state risk' : 'analysis-state'}><strong>{analysis.risks}</strong><span>项强关注</span></div></div>
+          <div className="analysis-disclaimer"><ShieldCheck/><span><b>这是财务指标分析，不是 AI 阅读年报全文。</b>结论来自六年结构化数据；审计意见、附注、关联交易和管理层表述仍需打开原始 PDF 核验。</span></div>
+          <div className="signal-grid">{analysis.signals.map((signal) => <article key={signal.title} className={`signal ${signal.status}`}><div><span className="signal-dot"/><small>{signal.status === 'risk' ? '需要解释' : signal.status === 'good' ? '表现稳健' : '继续观察'}</small></div><h3>{signal.title}</h3><strong>{signal.value}</strong><p>{signal.detail}</p></article>)}</div>
+          <div className="analysis-lower"><div className="panel questions"><div className="panel-head"><div><span className="kicker">不要急着下结论</span><h2>下一步必须回答</h2></div></div>{analysis.questions.map((question, index) => <div className="question" key={question}><span>{String(index + 1).padStart(2, '0')}</span><p>{question}</p></div>)}</div><div className="panel evidence"><div className="panel-head"><div><span className="kicker">证据入口</span><h2>核验材料</h2></div></div><a href={company.verification.annualReport?.url} target="_blank" rel="noreferrer"><FileCheck2/><span><strong>{latestYear} 年年度报告</strong><small>{company.verification.annualReport?.source || '待匹配'}</small></span><ExternalLink/></a><button onClick={() => setTab('news')}><Bell/><span><strong>近期重要披露</strong><small>{analysis.riskAnnouncements.length} 条风险类标题待核查</small></span><ChevronRight/></button></div></div>
+        </section>}
+
+        {tab === 'news' && <section className="panel news-feed"><div className="panel-head"><div><span className="kicker">官方披露优先</span><h2>{company.name} · 最新公告</h2></div><span className="source-stamp"><Bell size={13}/>每 2 小时抓取</span></div>{company.announcements.map((item, index) => { const [tag, kind] = announcementTag(item.title); return <a key={`${item.date}-${index}`} href={item.url} target="_blank" rel="noreferrer"><time>{item.date}<b className={`news-tag ${kind}`}>{tag}</b></time><span><strong>{item.title}</strong><small>{item.source} · 仅按标题分类</small></span><ExternalLink size={15}/></a>; })}</section>}
 
         {tab === 'filings' && <section className="filing-focus"><div className="panel annual-report-card"><FileCheck2/><span className="kicker">结构化数据核验锚点</span><h2>{latestYear} 年年度报告</h2>{company.verification.annualReport ? <><p>{company.verification.annualReport.title}</p><a href={company.verification.annualReport.url} target="_blank" rel="noreferrer">打开官方 PDF <ExternalLink size={15}/></a><small>{company.verification.annualReport.source} · {company.verification.annualReport.date}</small></> : <><p>当前未能自动匹配官方年报。请勿仅依据结构化指标决策。</p><span className="warn-text">需要人工复核</span></>}</div><div className="panel source-rules"><span className="kicker">数据分层</span><h2>什么可以相信，如何使用</h2><div><b>一级 · 法定披露</b><p>交易所与巨潮资讯 PDF，是最终核验依据。</p></div><div><b>二级 · 结构化财务</b><p>用于图表与筛选，存在口径映射风险，已链接原始年报交叉核验。</p></div><div><b>三级 · 行情快照</b><p>仅供估值参考，可能延迟或缺失，不用于交易。</p></div></div></section>}
 
