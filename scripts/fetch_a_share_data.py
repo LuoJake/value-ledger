@@ -18,7 +18,8 @@ CN_TZ = timezone(timedelta(hours=8))
 def curl_json(url, *, referer, data=None, attempts=3):
     command = [
         "curl", "--http1.1", "--fail", "--silent", "--show-error",
-        "--location", "--user-agent", UA, "--header", f"Referer: {referer}",
+        "--location", "--connect-timeout", "8", "--max-time", "25",
+        "--user-agent", UA, "--header", f"Referer: {referer}",
     ]
     if data is not None:
         command += ["--request", "POST", "--header", "Content-Type: application/x-www-form-urlencoded", "--data", data]
@@ -73,7 +74,7 @@ def price_snapshot(company):
     market = "1" if company["exchange"] == "SH" else "0"
     fields = "f43,f44,f45,f46,f57,f58,f60,f116,f117,f162,f167,f168"
     url = f'https://push2.eastmoney.com/api/qt/stock/get?secid={market}.{company["code"]}&fields={fields}'
-    row = curl_json(url, referer="https://quote.eastmoney.com/").get("data") or {}
+    row = curl_json(url, referer="https://quote.eastmoney.com/", attempts=1).get("data") or {}
     scaled = lambda key: row.get(key) / 100 if isinstance(row.get(key), (int, float)) else None
     price = scaled("f43")
     previous = scaled("f60")
