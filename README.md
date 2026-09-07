@@ -24,7 +24,7 @@ SEC 要求自动请求提供可联系的 User-Agent。请将示例邮箱替换�
 - `deploy.yml`：推送 `main` 后构建并发布 GitHub Pages。
 - `update-data.yml`：每天抓取一次 SEC 数据并提交有变化的数据文件。
 
-在仓库 `Settings > Secrets and variables > Actions` 中添加 `SEC_CONTACT_EMAIL`，内容为有效联系邮箱；然后在 `Settings > Pages` 中把 Source 设为 `GitHub Actions`。
+在仓库 `Settings > Secrets and variables > Actions > Variables` 中添加 `SEC_CONTACT_EMAIL`，内容为有效联系邮箱；然后在 `Settings > Pages` 中把 Source 设为 `GitHub Actions`。首次创建仓库时的自动化流程已完成这两项设置。
 
 ## 数据边界
 

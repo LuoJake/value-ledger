@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
       - name: Fetch official SEC data
         env:
-          SEC_USER_AGENT: "ValueLedger/1.0 ${{ secrets.SEC_CONTACT_EMAIL }}"
+          SEC_USER_AGENT: "ValueLedger/1.0 ${{ vars.SEC_CONTACT_EMAIL }}"
         run: python scripts/fetch_sec_data.py
       - name: Commit changed data
         run: |
