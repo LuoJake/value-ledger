@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T05:15:07.931060+08:00",
+  "generatedAt": "2026-09-09T08:19:26.874572+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 18.38,
         "pb": 6.51,
         "turnoverRate": 0.14,
-        "retrievedAt": "2026-09-09T05:14:07.193364+08:00",
+        "retrievedAt": "2026-09-09T08:19:13.169156+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -219,6 +219,436 @@
       }
     },
     {
+      "code": "000858",
+      "exchange": "SZ",
+      "name": "五粮液",
+      "orgId": "gssz0000858",
+      "type": "industrial",
+      "symbol": "000858.SZ",
+      "exchangeName": "深圳证券交易所",
+      "metrics": {
+        "revenue": 40528509770.23,
+        "netProfit": 8954257202.51,
+        "operatingCashFlow": 29706259919.13,
+        "roe": 6.89,
+        "debtRatio": 35.6890530354,
+        "eps": 2.3068,
+        "bookValuePerShare": 30.897574170422,
+        "grossMargin": 77.5418415205
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-04-28",
+          "revenue": 57321059453.15,
+          "netProfit": 19954809594.52,
+          "operatingCashFlow": 14698327593.21,
+          "roe": 24.94,
+          "debtRatio": 22.9468540382,
+          "eps": 5.141,
+          "bookValuePerShare": 22.08001749155,
+          "grossMargin": 74.1596515836
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-04-29",
+          "revenue": 66209053612.11,
+          "netProfit": 23377074353.4,
+          "operatingCashFlow": 26774941873.05,
+          "roe": 25.31,
+          "debtRatio": 25.2386989988,
+          "eps": 6.023,
+          "bookValuePerShare": 25.522540714731,
+          "grossMargin": 75.3526478653
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-04-29",
+          "revenue": 73968640704.54,
+          "netProfit": 26689983647.2,
+          "operatingCashFlow": 24431136261.48,
+          "roe": 25.28,
+          "debtRatio": 23.6401044479,
+          "eps": 6.876,
+          "bookValuePerShare": 29.375727441125,
+          "grossMargin": 75.4241453047
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-04-29",
+          "revenue": 83272067317.19,
+          "netProfit": 30210585269.3,
+          "operatingCashFlow": 41742479908.23,
+          "roe": 25.06,
+          "debtRatio": 19.9981939276,
+          "eps": 7.783,
+          "bookValuePerShare": 33.377466471015,
+          "grossMargin": 75.7936309238
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-04-26",
+          "revenue": 89175178322.7,
+          "netProfit": 31853172533.98,
+          "operatingCashFlow": 33939755192.78,
+          "roe": 23.35,
+          "debtRatio": 27.5467802337,
+          "eps": 8.2062,
+          "bookValuePerShare": 34.337646110654,
+          "grossMargin": 77.0547999246
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-04-30",
+          "revenue": 40528509770.23,
+          "netProfit": 8954257202.51,
+          "operatingCashFlow": 29706259919.13,
+          "roe": 6.89,
+          "debtRatio": 35.6890530354,
+          "eps": 2.3068,
+          "bookValuePerShare": 30.897574170422,
+          "grossMargin": 77.5418415205
+        }
+      ],
+      "quote": {
+        "price": 71.65,
+        "previousClose": 71.46,
+        "changePct": 0.2658830114749655,
+        "marketCap": 278117213558.25,
+        "floatMarketCap": 278110434465.15,
+        "peTtm": 15.89,
+        "pb": 2.35,
+        "turnoverRate": 0.51,
+        "retrievedAt": "2026-09-09T08:19:15.007533+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "延迟快照，禁止用于交易下单",
+        "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-09-03",
+          "title": "关于回购公司股份进展的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225544224.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "第七届董事会2026年第11次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531255.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "四川省宜宾五粮液集团财务有限公司风险持续评估审核报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531254.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531253.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531252.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度报告摘要",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531251.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-07",
+          "title": "关于四川省宜宾五粮液集团有限公司增持公司股票的进展公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-07/1225461522.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "关于回购公司股份进展的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-04/1225454939.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-29",
+          "title": "关于董事辞职的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-29/1225445661.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-29",
+          "title": "第七届董事会2026年第10次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-29/1225445660.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-29",
+          "title": "关于变更董事会秘书的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-29/1225445659.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-28",
+          "title": "第七届董事会2026年第9次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-28/1225443380.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      ],
+      "verification": {
+        "status": "matched",
+        "message": "已匹配交易所年度报告原文",
+        "annualReport": {
+          "date": "2026-05-23",
+          "title": "2025年度报告（英文版）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-05-23/1225324762.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22000858.SZ%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
+    },
+    {
+      "code": "000333",
+      "exchange": "SZ",
+      "name": "美的集团",
+      "orgId": "9900005965",
+      "type": "industrial",
+      "symbol": "000333.SZ",
+      "exchangeName": "深圳证券交易所",
+      "metrics": {
+        "revenue": 458502407000,
+        "netProfit": 43945411000,
+        "operatingCashFlow": 53345930000,
+        "roe": 19.7,
+        "debtRatio": 61.1650097449,
+        "eps": 5.8,
+        "bookValuePerShare": 29.382262020799,
+        "grossMargin": 26.3910058433
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-04-30",
+          "revenue": 285709729000,
+          "netProfit": 27222969000,
+          "operatingCashFlow": 29557117000,
+          "roe": 24.95,
+          "debtRatio": 65.5263325794,
+          "eps": 3.93,
+          "bookValuePerShare": 16.71645251705,
+          "grossMargin": 23.7219547227
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-04-30",
+          "revenue": 343360825000,
+          "netProfit": 28573650000,
+          "operatingCashFlow": 35091704000,
+          "roe": 24.09,
+          "debtRatio": 65.2464415521,
+          "eps": 4.17,
+          "bookValuePerShare": 17.872608624211,
+          "grossMargin": 22.4794091553
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-04-29",
+          "revenue": 345708706000,
+          "netProfit": 29553507000,
+          "operatingCashFlow": 34657828000,
+          "roe": 22.21,
+          "debtRatio": 64.046406739,
+          "eps": 4.34,
+          "bookValuePerShare": 20.427277312176,
+          "grossMargin": 24.243844086
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-03-28",
+          "revenue": 373709804000,
+          "netProfit": 33719935000,
+          "operatingCashFlow": 57902611000,
+          "roe": 22.23,
+          "debtRatio": 64.138692239,
+          "eps": 4.93,
+          "bookValuePerShare": 23.183060103456,
+          "grossMargin": 25.7038423676
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-03-29",
+          "revenue": 409084266000,
+          "netProfit": 38537237000,
+          "operatingCashFlow": 60511572000,
+          "roe": 21.29,
+          "debtRatio": 62.3286683296,
+          "eps": 5.44,
+          "bookValuePerShare": 28.3112986804,
+          "grossMargin": 26.4189538686
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-03-31",
+          "revenue": 458502407000,
+          "netProfit": 43945411000,
+          "operatingCashFlow": 53345930000,
+          "roe": 19.7,
+          "debtRatio": 61.1650097449,
+          "eps": 5.8,
+          "bookValuePerShare": 29.382262020799,
+          "grossMargin": 26.3910058433
+        }
+      ],
+      "quote": {
+        "price": 85.15,
+        "previousClose": 86.27,
+        "changePct": -1.298249681233321,
+        "marketCap": 649622995287.5,
+        "floatMarketCap": 586276207369.4501,
+        "peTtm": 12.28,
+        "pb": 3.07,
+        "turnoverRate": 0.33,
+        "retrievedAt": "2026-09-09T08:19:14.660878+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "延迟快照，禁止用于交易下单",
+        "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-09-03",
+          "title": "关于2026年A股持股计划非交易过户完成的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225544482.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225544342.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "第五届董事会第十八次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531407.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "关于2026年中期利润分配方案的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531406.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531405.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531404.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "2026年半年度报告摘要",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531403.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-06",
+          "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-06/1225460252.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-20",
+          "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-20/1225431508.pdf",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-16",
+          "title": "关于2023年限制性股票激励计划的第三次解除限售期解锁上市流通的提示性公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-16/1225426703.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "关于自主行权模式下第九期股权激励计划第三个行权期符合行权条件开始行权的提示性公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-14/1225421383.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-07-09",
+          "title": "关于2022年限制性股票激励计划的第三次解除限售期解锁上市流通的提示性公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-09/1225415692.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      ],
+      "verification": {
+        "status": "matched",
+        "message": "已匹配交易所年度报告原文",
+        "annualReport": {
+          "date": "2026-03-31",
+          "title": "2025年年度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225065145.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22000333.SZ%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
+    },
+    {
       "code": "600036",
       "exchange": "SH",
       "name": "招商银行",
@@ -323,7 +753,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-09T05:14:10.434560+08:00",
+        "retrievedAt": "2026-09-09T08:19:16.767379+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -536,7 +966,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-09T05:14:13.708383+08:00",
+        "retrievedAt": "2026-09-09T08:19:18.560383+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -643,9 +1073,541 @@
         "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22601318.SH%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
         "role": "计算辅助；最终以交易所/巨潮公告原文为准"
       }
+    },
+    {
+      "code": "000651",
+      "exchange": "SZ",
+      "name": "格力电器",
+      "orgId": "gssz0000651",
+      "type": "industrial",
+      "symbol": "000651.SZ",
+      "exchangeName": "深圳证券交易所",
+      "metrics": {
+        "revenue": 171118161275.41,
+        "netProfit": 29003103411.66,
+        "operatingCashFlow": 46383114754.02,
+        "roe": 20.3,
+        "debtRatio": 61.7266230738,
+        "eps": 5.2,
+        "bookValuePerShare": 26.052263405216,
+        "grossMargin": 29.8073230213
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-04-29",
+          "revenue": 170497415702.41,
+          "netProfit": 22175108137.32,
+          "operatingCashFlow": 19238637309.16,
+          "roe": 18.88,
+          "debtRatio": 58.1400486153,
+          "eps": 3.71,
+          "bookValuePerShare": 19.148165624898,
+          "grossMargin": 26.1417233686
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-04-30",
+          "revenue": 189654033523.5,
+          "netProfit": 23063732372.62,
+          "operatingCashFlow": 1894363258.72,
+          "roe": 21.34,
+          "debtRatio": 66.2308934644,
+          "eps": 4.04,
+          "bookValuePerShare": 17.525098854837,
+          "grossMargin": 24.2814230558
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-04-29",
+          "revenue": 190150672542.13,
+          "netProfit": 24506623782.46,
+          "operatingCashFlow": 28668435921.27,
+          "roe": 24.19,
+          "debtRatio": 71.3082414149,
+          "eps": 4.43,
+          "bookValuePerShare": 17.181986051509,
+          "grossMargin": 26.035460021
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-04-30",
+          "revenue": 205018123834.21,
+          "netProfit": 29017387604.18,
+          "operatingCashFlow": 56398426354.17,
+          "roe": 26.53,
+          "debtRatio": 67.2205205347,
+          "eps": 5.22,
+          "bookValuePerShare": 20.739708959889,
+          "grossMargin": 29.427392416
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-04-28",
+          "revenue": 190038071604.78,
+          "netProfit": 32184570372.28,
+          "operatingCashFlow": 29369250570.66,
+          "roe": 25.42,
+          "debtRatio": 61.5485043248,
+          "eps": 5.83,
+          "bookValuePerShare": 24.532573661028,
+          "grossMargin": 29.4282401746
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-04-29",
+          "revenue": 171118161275.41,
+          "netProfit": 29003103411.66,
+          "operatingCashFlow": 46383114754.02,
+          "roe": 20.3,
+          "debtRatio": 61.7266230738,
+          "eps": 5.2,
+          "bookValuePerShare": 26.052263405216,
+          "grossMargin": 29.8073230213
+        }
+      ],
+      "quote": {
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-09T08:19:19.428007+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "行情接口暂不可用",
+        "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-09-02",
+          "title": "关于股份回购进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-02/1225542476.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "关于“质量回报双提升”行动方案的进展公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515009.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "关于会计政策变更的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515008.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "关于子公司之间提供担保的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515007.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "第十三届董事会第七次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515006.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "2026年半年度非经营性资金占用及其他关联资金往来情况",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515005.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "2026年半年度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515004.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "2026年半年度报告摘要",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515003.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-21",
+          "title": "关于2025年年度权益分派实施后调整股份回购价格上限的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487187.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-21",
+          "title": "2025年年度权益分派实施公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487186.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-20",
+          "title": "关于第四期员工持股计划非交易过户完成的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225483700.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-19",
+          "title": "关于以集中竞价方式首次回购股份暨回购股份进展的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-19/1225480467.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      ],
+      "verification": {
+        "status": "matched",
+        "message": "已匹配交易所年度报告原文",
+        "annualReport": {
+          "date": "2026-06-17",
+          "title": "2025年年度报告（英文版）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-06-17/1225374514.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22000651.SZ%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
+    },
+    {
+      "code": "300750",
+      "exchange": "SZ",
+      "name": "宁德时代",
+      "orgId": "GD165627",
+      "type": "industrial",
+      "symbol": "300750.SZ",
+      "exchangeName": "深圳证券交易所",
+      "metrics": {
+        "revenue": 423701834000,
+        "netProfit": 72201282000,
+        "operatingCashFlow": 133219982000,
+        "roe": 24.91,
+        "debtRatio": 61.9392859503,
+        "eps": 16.14,
+        "bookValuePerShare": 73.865534292343,
+        "grossMargin": 26.2728475704
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-04-28",
+          "revenue": 50319487700,
+          "netProfit": 5583338700,
+          "operatingCashFlow": 18429902600,
+          "roe": 11.27,
+          "debtRatio": 55.8195559938,
+          "eps": 2.4942,
+          "bookValuePerShare": 27.563002890273,
+          "grossMargin": 27.7632677488
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-04-22",
+          "revenue": 130355796400,
+          "netProfit": 15931317900,
+          "operatingCashFlow": 42908008700,
+          "roe": 21.52,
+          "debtRatio": 69.8953035666,
+          "eps": 6.876,
+          "bookValuePerShare": 36.258544217666,
+          "grossMargin": 26.283506408
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-03-10",
+          "revenue": 328593987500,
+          "netProfit": 30729163500,
+          "operatingCashFlow": 61208843300,
+          "roe": 24.67,
+          "debtRatio": 70.561865439,
+          "eps": 7.1766,
+          "bookValuePerShare": 67.340951957501,
+          "grossMargin": 20.2512464718
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-03-16",
+          "revenue": 400917045000,
+          "netProfit": 44121248000,
+          "operatingCashFlow": 92826124000,
+          "roe": 24.04,
+          "debtRatio": 69.340079531,
+          "eps": 10.06,
+          "bookValuePerShare": 44.943441857285,
+          "grossMargin": 19.1897341257
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-03-15",
+          "revenue": 362012554000,
+          "netProfit": 50744682000,
+          "operatingCashFlow": 96990345000,
+          "roe": 24.13,
+          "debtRatio": 65.2382444159,
+          "eps": 11.58,
+          "bookValuePerShare": 56.07628922308,
+          "grossMargin": 24.4448967369
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-03-10",
+          "revenue": 423701834000,
+          "netProfit": 72201282000,
+          "operatingCashFlow": 133219982000,
+          "roe": 24.91,
+          "debtRatio": 61.9392859503,
+          "eps": 16.14,
+          "bookValuePerShare": 73.865534292343,
+          "grossMargin": 26.2728475704
+        }
+      ],
+      "quote": {
+        "price": 335.49,
+        "previousClose": 348.2,
+        "changePct": -3.650201033888567,
+        "marketCap": 1552235204850.9001,
+        "floatMarketCap": 1429253327139.9001,
+        "peTtm": 17.93,
+        "pb": 4.16,
+        "turnoverRate": 1.22,
+        "retrievedAt": "2026-09-09T08:19:25.748892+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "延迟快照，禁止用于交易下单",
+        "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-09-08",
+          "title": "关于注销部分已授予尚未行权的股票期权的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554556.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "关于2022年股票期权与限制性股票激励计划之限制性股票首次及预留授予第四个归属期归属条件成就的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554554.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "上海市通力律师事务所关于宁德时代新能源科技股份有限公司2022年股票期权与限制性股票激励计划第四个归属期/行权期条件成就、作废/注销部分限制性股票/股票期权、2023年限制性股票激励计划作废部分限制性股票的法律意见书",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554553.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "第四届董事会薪酬与考核委员会关于2022年股票期权与限制性股票激励计划及2023年限制性股票激励计划相关事项的核查意见",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554552.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "关于2022年股票期权与限制性股票激励计划之股票期权首次及预留授予第四个行权期行权条件成就的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554551.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "关于作废部分已授予尚未归属的限制性股票的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554555.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "第四届董事会第十九次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554550.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "H股公告（截至2026年8月31日止股份发行人的证券变动月报表）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225547099.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "关于回购公司A股股份的进展公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225545968.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "关于2026年度第六期绿色科技创新债券发行完成的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225519101.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-25",
+          "title": "H股公告（变更香港的主要营业地址）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225502236.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-08-12",
+          "title": "关于宁德时代新能源科技股份有限公司2026年第一次临时股东会的法律意见书",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-12/1225470689.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      ],
+      "verification": {
+        "status": "matched",
+        "message": "已匹配交易所年度报告原文",
+        "annualReport": {
+          "date": "2026-03-10",
+          "title": "2025年年度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        }
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22300750.SZ%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
     }
   ],
   "macro": {
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      }
+    ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 50
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      }
+    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-08-01 00:00:00",
@@ -706,48 +1668,6 @@
         "REPORT_DATE": "2026-07-01 00:00:00",
         "NATIONAL_SAME": 0.5,
         "NATIONAL_SEQUENTIAL": -0.1
-      }
-    ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
       }
     ],
     "money": [
@@ -824,68 +1744,6 @@
         "FREE_CASH_SAME": 11.6
       }
     ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 50
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      }
-    ],
     "sources": [
       {
         "name": "国家统计局",
@@ -904,26 +1762,5 @@
       }
     ]
   },
-  "errors": [
-    {
-      "code": "000858",
-      "name": "五粮液",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-08~2026-09-09&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 28."
-    },
-    {
-      "code": "000333",
-      "name": "美的集团",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-08~2026-09-09&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 28."
-    },
-    {
-      "code": "000651",
-      "name": "格力电器",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-08~2026-09-09&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 28."
-    },
-    {
-      "code": "300750",
-      "name": "宁德时代",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-08~2026-09-09&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 28."
-    }
-  ]
+  "errors": []
 }
