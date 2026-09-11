@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:29:50.889153+08:00",
+  "generatedAt": "2026-09-12T00:34:11.023497+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,17 +102,15 @@
         }
       ],
       "quote": {
-        "price": 1275.16,
-        "previousClose": 1285.13,
-        "changePct": -0.7757970010816018,
-        "marketCap": 1594054054331.1602,
-        "floatMarketCap": 1594054054331.1602,
-        "peTtm": 17.9,
-        "pb": 6.34,
-        "turnoverRate": 0.28,
-        "retrievedAt": "2026-09-11T19:29:41.723412+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-12T00:34:01.891780+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
       },
       "announcements": [
@@ -317,20 +315,25 @@
         }
       ],
       "quote": {
-        "price": 69.75,
-        "previousClose": 70.48,
-        "changePct": -1.0357548240635728,
-        "marketCap": 270742158348.75,
-        "floatMarketCap": 270735559022.25,
-        "peTtm": 15.47,
-        "pb": 2.29,
-        "turnoverRate": 0.6,
-        "retrievedAt": "2026-09-11T19:29:41.827697+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-12T00:34:02.072160+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
+        {
+          "date": "2026-09-12",
+          "title": "2026年半年度报告（英文版）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-12/1225560310.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-03",
           "title": "关于回购公司股份进展的公告",
@@ -406,13 +409,6 @@
           "title": "关于变更董事会秘书的公告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-07-29/1225445659.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-07-28",
-          "title": "第七届董事会2026年第9次会议决议公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-07-28/1225443380.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -532,17 +528,15 @@
         }
       ],
       "quote": {
-        "price": 86.26,
-        "previousClose": 86.2,
-        "changePct": 0.06960556844548549,
-        "marketCap": 658106444000.8,
-        "floatMarketCap": 593933878812.18,
-        "peTtm": 12.44,
-        "pb": 3.11,
-        "turnoverRate": 0.32,
-        "retrievedAt": "2026-09-11T19:29:41.725098+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-12T00:34:01.876364+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -753,7 +747,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-11T19:29:45.621272+08:00",
+        "retrievedAt": "2026-09-12T00:34:05.184046+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -960,17 +954,15 @@
         }
       ],
       "quote": {
-        "price": 54.83,
-        "previousClose": 55.52,
-        "changePct": -1.2427953890490007,
-        "marketCap": 992842010585.85,
-        "floatMarketCap": 584491368500.89,
-        "peTtm": 5.36,
-        "pb": 0.98,
-        "turnoverRate": 0.56,
-        "retrievedAt": "2026-09-11T19:29:48.336135+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-12T00:34:05.387917+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -1181,7 +1173,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-11T19:29:45.811159+08:00",
+        "retrievedAt": "2026-09-12T00:34:08.023750+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1394,12 +1386,19 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-11T19:29:49.795316+08:00",
+        "retrievedAt": "2026-09-12T00:34:10.035021+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
+        {
+          "date": "2026-09-11",
+          "title": "H股公告（翌日披露报表）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-11/1225561681.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-11",
           "title": "关于首次回购公司A股股份的公告",
@@ -1475,13 +1474,6 @@
           "title": "H股公告（截至2026年8月31日止股份发行人的证券变动月报表）",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225547099.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-09-03",
-          "title": "关于回购公司A股股份的进展公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225545968.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -1566,48 +1558,6 @@
         "NATIONAL_SEQUENTIAL": 0.4
       }
     ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      }
-    ],
     "money": [
       {
         "REPORT_DATE": "2025-08-01 00:00:00",
@@ -1680,6 +1630,48 @@
         "BASIC_CURRENCY_SAME": 7.7,
         "CURRENCY_SAME": 4,
         "FREE_CASH_SAME": 11.6
+      }
+    ],
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
       }
     ],
     "pmi": [
