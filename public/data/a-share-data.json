@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T19:51:12.961673+08:00",
+  "generatedAt": "2026-09-16T05:26:38.248330+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.87,
         "pb": 6.33,
         "turnoverRate": 0.11,
-        "retrievedAt": "2026-09-15T19:51:07.044526+08:00",
+        "retrievedAt": "2026-09-16T05:26:32.838868+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,15 +317,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-15T19:51:11.274042+08:00",
+        "price": 41.1,
+        "previousClose": 41.83,
+        "changePct": -1.74515897681089,
+        "marketCap": 1036535654201.1,
+        "floatMarketCap": 847849616031.9,
+        "peTtm": 6.78,
+        "pb": 0.91,
+        "turnoverRate": 0.28,
+        "retrievedAt": "2026-09-16T05:26:36.231427+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -530,15 +532,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-15T19:51:10.591077+08:00",
+        "price": 53.9,
+        "previousClose": 54.73,
+        "changePct": -1.5165357208112518,
+        "marketCap": 976001903530.5,
+        "floatMarketCap": 574577507973.7,
+        "peTtm": 5.27,
+        "pb": 0.97,
+        "turnoverRate": 0.46,
+        "retrievedAt": "2026-09-16T05:26:36.512423+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -708,48 +712,6 @@
         "NMAKE_INDEX": 49
       }
     ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      }
-    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
@@ -886,6 +848,48 @@
         "FREE_CASH_SAME": 11.2
       }
     ],
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      }
+    ],
     "sources": [
       {
         "name": "国家统计局",
@@ -908,22 +912,22 @@
     {
       "code": "000333",
       "name": "美的集团",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-14~2026-09-15&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-15~2026-09-16&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "000858",
       "name": "五粮液",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-14~2026-09-15&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-15~2026-09-16&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-14~2026-09-15&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-15~2026-09-16&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-14~2026-09-15&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-15~2026-09-16&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     }
   ]
 }
