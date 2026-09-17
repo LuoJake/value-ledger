@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T15:46:13.770656+08:00",
+  "generatedAt": "2026-09-18T06:53:09.910489+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,15 +102,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-17T15:46:07.957374+08:00",
+        "price": 1266.98,
+        "previousClose": 1258.0,
+        "changePct": 0.7138314785373634,
+        "marketCap": 1583828386834.98,
+        "floatMarketCap": 1583828386834.98,
+        "peTtm": 17.79,
+        "pb": 6.3,
+        "turnoverRate": 0.14,
+        "retrievedAt": "2026-09-18T06:53:04.599861+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
       },
       "announcements": [
@@ -315,15 +317,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-17T15:46:11.933154+08:00",
+        "price": 40.6,
+        "previousClose": 40.92,
+        "changePct": -0.782013685239491,
+        "marketCap": 1023925731400.6,
+        "floatMarketCap": 837535143817.4,
+        "peTtm": 6.7,
+        "pb": 0.89,
+        "turnoverRate": 0.27,
+        "retrievedAt": "2026-09-18T06:53:08.422418+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -528,15 +532,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-17T15:46:10.902432+08:00",
+        "price": 53.35,
+        "previousClose": 53.51,
+        "changePct": -0.29900953092879545,
+        "marketCap": 966042700433.25,
+        "floatMarketCap": 568714472178.05,
+        "peTtm": 5.22,
+        "pb": 0.96,
+        "turnoverRate": 0.37,
+        "retrievedAt": "2026-09-18T06:53:08.444558+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -644,6 +650,110 @@
     }
   ],
   "macro": {
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      }
+    ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 50
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      }
+    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
@@ -780,110 +890,6 @@
         "FREE_CASH_SAME": 11.2
       }
     ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 50
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      }
-    ],
     "sources": [
       {
         "name": "国家统计局",
@@ -904,24 +910,24 @@
   },
   "errors": [
     {
-      "code": "000858",
-      "name": "五粮液",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-16~2026-09-17&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
-    },
-    {
       "code": "000333",
       "name": "美的集团",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-16~2026-09-17&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-17~2026-09-18&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+    },
+    {
+      "code": "000858",
+      "name": "五粮液",
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-17~2026-09-18&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-16~2026-09-17&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-17~2026-09-18&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-16~2026-09-17&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-17~2026-09-18&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     }
   ]
 }
