@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T15:23:27.096710+08:00",
+  "generatedAt": "2026-09-20T01:18:44.992076+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.65,
         "pb": 6.25,
         "turnoverRate": 0.2,
-        "retrievedAt": "2026-09-19T15:23:20.021407+08:00",
+        "retrievedAt": "2026-09-20T01:18:39.539238+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,15 +317,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-09-19T15:23:22.916879+08:00",
+        "price": 40.59,
+        "previousClose": 40.6,
+        "changePct": -0.024630541871917266,
+        "marketCap": 1023673532944.5901,
+        "floatMarketCap": 837328854373.1101,
+        "peTtm": 6.7,
+        "pb": 0.89,
+        "turnoverRate": 0.24,
+        "retrievedAt": "2026-09-20T01:18:42.796478+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -538,7 +540,7 @@
         "peTtm": 5.22,
         "pb": 0.96,
         "turnoverRate": 0.57,
-        "retrievedAt": "2026-09-19T15:23:25.975185+08:00",
+        "retrievedAt": "2026-09-20T01:18:43.359974+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -648,6 +650,68 @@
     }
   ],
   "macro": {
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "NATIONAL_SAME": -0.3,
+        "NATIONAL_SEQUENTIAL": 0.1
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
+      }
+    ],
     "money": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
@@ -826,68 +890,6 @@
         "SUM_SAME": 4.7
       }
     ],
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "NATIONAL_SAME": -0.3,
-        "NATIONAL_SEQUENTIAL": 0.1
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      }
-    ],
     "sources": [
       {
         "name": "国家统计局",
@@ -908,24 +910,24 @@
   },
   "errors": [
     {
-      "code": "000333",
-      "name": "美的集团",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-18~2026-09-19&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
-    },
-    {
       "code": "000858",
       "name": "五粮液",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-18~2026-09-19&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000858%2Cgssz0000858&searchkey=&secid=&category=&trade=&seDate=2025-03-19~2026-09-20&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000333%2C9900005965&searchkey=&secid=&category=&trade=&seDate=2025-03-19~2026-09-20&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-18~2026-09-19&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=000651%2Cgssz0000651&searchkey=&secid=&category=&trade=&seDate=2025-03-19~2026-09-20&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-18~2026-09-19&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
+      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.cninfo.com.cn/', '--request', 'POST', '--header', 'Content-Type: application/x-www-form-urlencoded', '--data', 'pageNum=1&pageSize=50&column=szse&tabName=fulltext&plate=sz&stock=300750%2CGD165627&searchkey=&secid=&category=&trade=&seDate=2025-03-19~2026-09-20&sortName=&sortType=&isHLtitle=true', 'https://www.cninfo.com.cn/new/hisAnnouncement/query']' returned non-zero exit status 22."
     }
   ]
 }
