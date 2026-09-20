@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T04:47:09.814593+08:00",
+  "generatedAt": "2026-09-20T08:10:19.543283+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.65,
         "pb": 6.25,
         "turnoverRate": 0.2,
-        "retrievedAt": "2026-09-20T04:47:04.399095+08:00",
+        "retrievedAt": "2026-09-20T08:10:14.021461+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 6.7,
         "pb": 0.89,
         "turnoverRate": 0.24,
-        "retrievedAt": "2026-09-20T04:47:07.328943+08:00",
+        "retrievedAt": "2026-09-20T08:10:17.939693+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -540,7 +540,7 @@
         "peTtm": 5.22,
         "pb": 0.96,
         "turnoverRate": 0.57,
-        "retrievedAt": "2026-09-20T04:47:07.443612+08:00",
+        "retrievedAt": "2026-09-20T08:10:17.825324+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -650,66 +650,66 @@
     }
   ],
   "macro": {
-    "pmi": [
+    "cpi": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 50
+        "NATIONAL_SAME": -0.3,
+        "NATIONAL_SEQUENTIAL": 0.1
       },
       {
         "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
       },
       {
         "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
       },
       {
         "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
       },
       {
         "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
       },
       {
         "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
       },
       {
         "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
       },
       {
         "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
       },
       {
         "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
       },
       {
         "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
       },
       {
         "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
       },
       {
         "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
       }
     ],
     "money": [
@@ -786,68 +786,6 @@
         "FREE_CASH_SAME": 11.2
       }
     ],
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "NATIONAL_SAME": -0.3,
-        "NATIONAL_SEQUENTIAL": 0.1
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      }
-    ],
     "gdp": [
       {
         "REPORT_DATE": "2024-09-01 00:00:00",
@@ -888,6 +826,68 @@
         "REPORT_DATE": "2026-06-01 00:00:00",
         "DOMESTICL_PRODUCT_BASE": 695704,
         "SUM_SAME": 4.7
+      }
+    ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 50
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
       }
     ],
     "sources": [
