@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T13:06:12.844248+08:00",
+  "generatedAt": "2026-09-22T19:46:49.580940+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,15 +102,15 @@
         }
       ],
       "quote": {
-        "price": 1253.72,
+        "price": 1253.8,
         "previousClose": 1252.57,
-        "changePct": 0.09181123609858233,
-        "marketCap": 1567252304805.72,
-        "floatMarketCap": 1567252304805.72,
+        "changePct": 0.09819810469673396,
+        "marketCap": 1567352311333.8,
+        "floatMarketCap": 1567352311333.8,
         "peTtm": 17.6,
         "pb": 6.24,
-        "turnoverRate": 0.13,
-        "retrievedAt": "2026-09-22T13:06:01.918214+08:00",
+        "turnoverRate": 0.2,
+        "retrievedAt": "2026-09-22T19:46:34.652315+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,17 +317,15 @@
         }
       ],
       "quote": {
-        "price": 70.38,
-        "previousClose": 70.27,
-        "changePct": 0.1565390636117714,
-        "marketCap": 273187571391.9,
-        "floatMarketCap": 273180912458.58,
-        "peTtm": 15.61,
-        "pb": 2.31,
-        "turnoverRate": 0.23,
-        "retrievedAt": "2026-09-22T13:06:06.698155+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:39.011571+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
@@ -532,17 +530,15 @@
         }
       ],
       "quote": {
-        "price": 82.5,
-        "previousClose": 80.9,
-        "changePct": 1.9777503090234738,
-        "marketCap": 629433110790.0,
-        "floatMarketCap": 568057773112.5,
-        "peTtm": 11.9,
-        "pb": 2.97,
-        "turnoverRate": 0.37,
-        "retrievedAt": "2026-09-22T13:06:05.880474+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:46.189550+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -747,20 +743,25 @@
         }
       ],
       "quote": {
-        "price": 40.78,
-        "previousClose": 41.04,
-        "changePct": -0.6335282651072083,
-        "marketCap": 1028465303608.78,
-        "floatMarketCap": 841248353814.62,
-        "peTtm": 6.73,
-        "pb": 0.9,
-        "turnoverRate": 0.13,
-        "retrievedAt": "2026-09-22T13:06:06.423007+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:39.999621+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
+        {
+          "date": "2026-09-23",
+          "title": "招商银行股份有限公司关于董事任职资格核准及董事会专门委员会成员调整的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/600036_20260923_4D1F.pdf",
+          "source": "上海证券交易所"
+        },
         {
           "date": "2026-09-09",
           "title": "招商银行股份有限公司关于独立董事任职资格核准及董事会专门委员会成员调整的公告",
@@ -836,13 +837,6 @@
           "title": "招商银行股份有限公司关于行长任职资格核准的公告",
           "type": "临时公告",
           "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-29/600036_20260729_DOCI.pdf",
-          "source": "上海证券交易所"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "招商银行内幕信息及知情人管理制度（2026年修订）",
-          "type": "临时公告",
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-07-11/600036_20260711_D4UZ.pdf",
           "source": "上海证券交易所"
         }
       ],
@@ -962,17 +956,15 @@
         }
       ],
       "quote": {
-        "price": 54.16,
-        "previousClose": 53.98,
-        "changePct": 0.3334568358651424,
-        "marketCap": 980709890449.2,
-        "floatMarketCap": 577349124895.2799,
-        "peTtm": 5.3,
-        "pb": 0.97,
-        "turnoverRate": 0.33,
-        "retrievedAt": "2026-09-22T13:06:10.416100+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:42.967183+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -1177,17 +1169,15 @@
         }
       ],
       "quote": {
-        "price": 38.16,
-        "previousClose": 38.0,
-        "changePct": 0.42105263157894424,
-        "marketCap": 213749643076.55997,
-        "floatMarketCap": 210371996536.55997,
-        "peTtm": 8.05,
-        "pb": 1.56,
-        "turnoverRate": 0.42,
-        "retrievedAt": "2026-09-22T13:06:11.848765+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:46.748623+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
@@ -1392,20 +1382,25 @@
         }
       ],
       "quote": {
-        "price": 306.51,
-        "previousClose": 297.1,
-        "changePct": 3.1672837428475153,
-        "marketCap": 1418295506804.19,
-        "floatMarketCap": 1305918947658.66,
-        "peTtm": 16.38,
-        "pb": 3.8,
-        "turnoverRate": 0.8,
-        "retrievedAt": "2026-09-22T13:06:11.657267+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-22T19:46:48.628779+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
+        {
+          "date": "2026-09-22",
+          "title": "关于2026年度第七期绿色科技创新债券发行完成的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-22/1225577258.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-21",
           "title": "H股公告（翌日披露报表）",
@@ -1482,13 +1477,6 @@
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-11/1225561227.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-09-08",
-          "title": "关于注销部分已授予尚未行权的股票期权的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-09-08/1225554556.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
       "verification": {
@@ -1510,6 +1498,48 @@
     }
   ],
   "macro": {
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      }
+    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
@@ -1572,46 +1602,66 @@
         "NATIONAL_SEQUENTIAL": 0.4
       }
     ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
+    "pmi": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 50
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
       },
       {
         "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
       },
       {
         "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
       },
       {
         "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
       }
     ],
     "money": [
@@ -1686,68 +1736,6 @@
         "BASIC_CURRENCY_SAME": 7.5,
         "CURRENCY_SAME": 4.1,
         "FREE_CASH_SAME": 11.2
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 50
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
       }
     ],
     "sources": [
