@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T15:49:00.686485+08:00",
+  "generatedAt": "2026-09-23T21:41:53.800196+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.57,
         "pb": 6.23,
         "turnoverRate": 0.25,
-        "retrievedAt": "2026-09-23T15:48:51.477384+08:00",
+        "retrievedAt": "2026-09-23T21:41:41.886220+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -323,7 +323,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:53.619193+08:00",
+        "retrievedAt": "2026-09-23T21:41:42.476231+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -536,7 +536,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:53.061924+08:00",
+        "retrievedAt": "2026-09-23T21:41:44.055212+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -749,7 +749,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:54.888523+08:00",
+        "retrievedAt": "2026-09-23T21:41:48.069469+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -962,7 +962,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:56.274967+08:00",
+        "retrievedAt": "2026-09-23T21:41:47.176983+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1175,7 +1175,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:57.941119+08:00",
+        "retrievedAt": "2026-09-23T21:41:48.553906+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1388,12 +1388,19 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-23T15:48:59.222674+08:00",
+        "retrievedAt": "2026-09-23T21:41:52.545801+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
+        {
+          "date": "2026-09-23",
+          "title": "H股公告（翌日披露报表）",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225579471.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-22",
           "title": "关于2026年度第七期绿色科技创新债券发行完成的公告",
@@ -1469,13 +1476,6 @@
           "title": "关于2022年股票期权与限制性股票激励计划第四个归属期归属结果暨股份上市的提示性公告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-11/1225561268.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-09-11",
-          "title": "关于2022年股票期权与限制性股票激励计划部分股票期权注销完成的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-09-11/1225561227.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
