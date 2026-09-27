@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T08:40:55.166253+08:00",
+  "generatedAt": "2026-09-27T16:18:08.679380+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,17 +102,15 @@
         }
       ],
       "quote": {
-        "price": 1237.0,
-        "previousClose": 1251.24,
-        "changePct": -1.1380710335347377,
-        "marketCap": 1546350940437.0,
-        "floatMarketCap": 1546350940437.0,
-        "peTtm": 17.37,
-        "pb": 6.15,
-        "turnoverRate": 0.25,
-        "retrievedAt": "2026-09-27T08:40:35.969666+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-09-27T16:17:59.112145+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
       },
       "announcements": [
@@ -323,7 +321,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:42.128353+08:00",
+        "retrievedAt": "2026-09-27T16:18:00.562475+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -536,7 +534,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:38.176888+08:00",
+        "retrievedAt": "2026-09-27T16:18:00.679747+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -749,7 +747,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:39.678966+08:00",
+        "retrievedAt": "2026-09-27T16:18:02.530321+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -962,7 +960,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:47.707835+08:00",
+        "retrievedAt": "2026-09-27T16:18:03.586256+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1169,7 +1167,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:42.892209+08:00",
+        "retrievedAt": "2026-09-27T16:18:04.475287+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1382,7 +1380,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-09-27T08:40:53.949346+08:00",
+        "retrievedAt": "2026-09-27T16:18:07.740511+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
