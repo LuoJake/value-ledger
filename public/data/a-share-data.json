@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T21:41:51.166119+08:00",
+  "generatedAt": "2026-10-09T03:59:06.235834+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.63,
         "pb": 6.25,
         "turnoverRate": 0.2,
-        "retrievedAt": "2026-10-08T21:41:40.109299+08:00",
+        "retrievedAt": "2026-10-09T03:58:55.757274+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 15.55,
         "pb": 2.3,
         "turnoverRate": 0.43,
-        "retrievedAt": "2026-10-08T21:41:40.588261+08:00",
+        "retrievedAt": "2026-10-09T03:58:54.647528+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -532,18 +532,27 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-08T21:41:41.581705+08:00",
+        "price": 81.74,
+        "previousClose": 80.1,
+        "changePct": 2.047440699126102,
+        "marketCap": 623679764109.22,
+        "floatMarketCap": 562869823481.84,
+        "peTtm": 11.79,
+        "pb": 2.94,
+        "turnoverRate": 0.56,
+        "retrievedAt": "2026-10-09T03:58:54.431681+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
+        {
+          "date": "2026-10-09",
+          "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-09/1225596587.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-30",
           "title": "关于全资子公司受让合伙企业份额暨与专业投资机构共同投资的公告",
@@ -619,13 +628,6 @@
           "title": "2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531405.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-29",
-          "title": "2026年半年度报告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225531404.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -751,7 +753,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-08T21:41:45.933557+08:00",
+        "retrievedAt": "2026-10-09T03:58:58.756565+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -958,7 +960,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-08T21:41:44.903049+08:00",
+        "retrievedAt": "2026-10-09T03:58:58.615166+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1165,12 +1167,19 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-08T21:41:45.870431+08:00",
+        "retrievedAt": "2026-10-09T03:58:59.475133+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
+        {
+          "date": "2026-10-09",
+          "title": "关于股份回购进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-09/1225596903.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-09-02",
           "title": "关于股份回购进展情况的公告",
@@ -1246,13 +1255,6 @@
           "title": "关于第四期员工持股计划非交易过户完成的公告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225483700.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-19",
-          "title": "关于以集中竞价方式首次回购股份暨回购股份进展的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-19/1225480467.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -1378,7 +1380,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-08T21:41:50.045960+08:00",
+        "retrievedAt": "2026-10-09T03:59:05.011557+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1488,6 +1490,68 @@
     }
   ],
   "macro": {
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      }
+    ],
     "money": [
       {
         "REPORT_DATE": "2025-09-01 00:00:00",
@@ -1560,68 +1624,6 @@
         "BASIC_CURRENCY_SAME": 7.5,
         "CURRENCY_SAME": 4.1,
         "FREE_CASH_SAME": 11.2
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
       }
     ],
     "cpi": [
