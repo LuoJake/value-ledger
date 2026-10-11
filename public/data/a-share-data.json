@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T21:00:56.717881+08:00",
+  "generatedAt": "2026-10-12T02:58:43.391666+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.73,
         "pb": 6.28,
         "turnoverRate": 0.28,
-        "retrievedAt": "2026-10-11T21:00:42.773455+08:00",
+        "retrievedAt": "2026-10-12T02:58:34.897141+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 15.65,
         "pb": 2.31,
         "turnoverRate": 0.46,
-        "retrievedAt": "2026-10-11T21:00:44.903530+08:00",
+        "retrievedAt": "2026-10-12T02:58:36.490485+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -540,7 +540,7 @@
         "peTtm": 11.9,
         "pb": 2.97,
         "turnoverRate": 0.52,
-        "retrievedAt": "2026-10-11T21:00:45.810083+08:00",
+        "retrievedAt": "2026-10-12T02:58:36.595553+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -753,7 +753,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-11T21:00:48.873481+08:00",
+        "retrievedAt": "2026-10-12T02:58:38.605438+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -960,7 +960,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-11T21:00:48.800788+08:00",
+        "retrievedAt": "2026-10-12T02:58:39.693334+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1167,7 +1167,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-11T21:00:49.580919+08:00",
+        "retrievedAt": "2026-10-12T02:58:40.327867+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1380,12 +1380,19 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-11T21:00:54.939471+08:00",
+        "retrievedAt": "2026-10-12T02:58:42.388114+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
+        {
+          "date": "2026-10-12",
+          "title": "关于参与投资的基金完成私募投资基金备案的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225600435.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-10-08",
           "title": "关于回购公司A股股份的进展公告",
@@ -1461,13 +1468,6 @@
           "title": "董事会关于2026年A股第二期员工持股计划草案合规性说明",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225591993.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-09-30",
-          "title": "董事会薪酬与考核委员会关于2026年A股第二期员工持股计划相关事项的核查意见",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225591992.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
