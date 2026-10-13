@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:04:58.552379+08:00",
+  "generatedAt": "2026-10-14T05:19:36.435953+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 17.9,
         "pb": 6.34,
         "turnoverRate": 0.21,
-        "retrievedAt": "2026-10-14T00:04:44.564126+08:00",
+        "retrievedAt": "2026-10-14T05:19:28.150435+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 15.62,
         "pb": 2.31,
         "turnoverRate": 0.51,
-        "retrievedAt": "2026-10-14T00:04:46.839242+08:00",
+        "retrievedAt": "2026-10-14T05:19:29.754890+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -540,7 +540,7 @@
         "peTtm": 11.94,
         "pb": 2.98,
         "turnoverRate": 0.32,
-        "retrievedAt": "2026-10-14T00:04:47.161990+08:00",
+        "retrievedAt": "2026-10-14T05:19:29.729269+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -755,7 +755,7 @@
         "peTtm": 7.06,
         "pb": 0.94,
         "turnoverRate": 0.39,
-        "retrievedAt": "2026-10-14T00:04:50.451134+08:00",
+        "retrievedAt": "2026-10-14T05:19:31.664427+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -964,7 +964,7 @@
         "peTtm": 5.05,
         "pb": 0.93,
         "turnoverRate": 1.08,
-        "retrievedAt": "2026-10-14T00:04:51.557676+08:00",
+        "retrievedAt": "2026-10-14T05:19:33.816682+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1173,7 +1173,7 @@
         "peTtm": 8.36,
         "pb": 1.62,
         "turnoverRate": 0.84,
-        "retrievedAt": "2026-10-14T00:04:55.562897+08:00",
+        "retrievedAt": "2026-10-14T05:19:34.384254+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1388,7 +1388,7 @@
         "peTtm": 15.45,
         "pb": 3.59,
         "turnoverRate": 0.96,
-        "retrievedAt": "2026-10-14T00:04:57.431781+08:00",
+        "retrievedAt": "2026-10-14T05:19:35.465190+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1498,68 +1498,6 @@
     }
   ],
   "macro": {
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "NATIONAL_SAME": -0.3,
-        "NATIONAL_SEQUENTIAL": 0.1
-      },
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      }
-    ],
     "gdp": [
       {
         "REPORT_DATE": "2024-09-01 00:00:00",
@@ -1674,6 +1612,68 @@
         "BASIC_CURRENCY_SAME": 7.5,
         "CURRENCY_SAME": 4.1,
         "FREE_CASH_SAME": 11.2
+      }
+    ],
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "NATIONAL_SAME": -0.3,
+        "NATIONAL_SEQUENTIAL": 0.1
+      },
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
       }
     ],
     "pmi": [
