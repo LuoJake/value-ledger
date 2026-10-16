@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:27:27.278994+08:00",
+  "generatedAt": "2026-10-16T15:17:05.673253+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,15 +102,15 @@
         }
       ],
       "quote": {
-        "price": 1312.97,
-        "previousClose": 1286.0,
-        "changePct": 2.0972006220839834,
-        "marketCap": 1641319639664.97,
-        "floatMarketCap": 1641319639664.97,
-        "peTtm": 18.43,
-        "pb": 6.53,
-        "turnoverRate": 0.46,
-        "retrievedAt": "2026-10-16T08:27:19.630713+08:00",
+        "price": 1329.0,
+        "previousClose": 1312.97,
+        "changePct": 1.2208961362407456,
+        "marketCap": 1661358447729.0,
+        "floatMarketCap": 1661358447729.0,
+        "peTtm": 18.66,
+        "pb": 6.61,
+        "turnoverRate": 0.31,
+        "retrievedAt": "2026-10-16T15:16:53.268335+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,15 +317,15 @@
         }
       ],
       "quote": {
-        "price": 71.3,
-        "previousClose": 70.82,
-        "changePct": 0.6777746399322382,
-        "marketCap": 276758650756.5,
-        "floatMarketCap": 276751904778.3,
-        "peTtm": 15.81,
-        "pb": 2.34,
-        "turnoverRate": 0.75,
-        "retrievedAt": "2026-10-16T08:27:21.069183+08:00",
+        "price": 72.07,
+        "previousClose": 71.3,
+        "changePct": 1.0799438990182209,
+        "marketCap": 279747488920.35,
+        "floatMarketCap": 279740670089.37,
+        "peTtm": 15.98,
+        "pb": 2.36,
+        "turnoverRate": 0.78,
+        "retrievedAt": "2026-10-16T15:16:52.997202+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -532,15 +532,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-16T08:27:22.411153+08:00",
+        "price": 84.6,
+        "previousClose": 84.71,
+        "changePct": -0.12985479872505978,
+        "marketCap": 645510619951.2,
+        "floatMarketCap": 582573000951.0,
+        "peTtm": 12.2,
+        "pb": 3.05,
+        "turnoverRate": 0.34,
+        "retrievedAt": "2026-10-16T15:16:52.364088+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -745,15 +747,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-16T08:27:22.792877+08:00",
+        "price": 42.45,
+        "previousClose": 42.66,
+        "changePct": -0.4922644163150358,
+        "marketCap": 1070582445762.4501,
+        "floatMarketCap": 875698691011.05,
+        "peTtm": 7.0,
+        "pb": 0.93,
+        "turnoverRate": 0.41,
+        "retrievedAt": "2026-10-16T15:16:57.569779+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -952,15 +956,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-16T08:27:24.205621+08:00",
+        "price": 51.88,
+        "previousClose": 51.78,
+        "changePct": 0.1931247585940543,
+        "marketCap": 939424466700.6001,
+        "floatMarketCap": 553044176506.04,
+        "peTtm": 5.07,
+        "pb": 0.93,
+        "turnoverRate": 0.62,
+        "retrievedAt": "2026-10-16T15:16:59.434952+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -1159,15 +1165,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-16T08:27:26.003457+08:00",
+        "price": 39.49,
+        "previousClose": 39.7,
+        "changePct": -0.5289672544080637,
+        "marketCap": 221199512712.09,
+        "floatMarketCap": 217704144214.59,
+        "peTtm": 8.33,
+        "pb": 1.61,
+        "turnoverRate": 0.49,
+        "retrievedAt": "2026-10-16T15:16:59.077999+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
@@ -1372,15 +1380,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-10-16T08:27:26.432438+08:00",
+        "price": 277.0,
+        "previousClose": 278.5,
+        "changePct": -0.538599640933568,
+        "marketCap": 1281748163022.0,
+        "floatMarketCap": 1180190931991.0,
+        "peTtm": 14.81,
+        "pb": 3.44,
+        "turnoverRate": 0.7,
+        "retrievedAt": "2026-10-16T15:17:04.936567+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
@@ -1488,110 +1498,6 @@
     }
   ],
   "macro": {
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 974553.8,
-        "SUM_SAME": 4.8
-      },
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      }
-    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-10-01 00:00:00",
@@ -1726,6 +1632,110 @@
         "BASIC_CURRENCY_SAME": 7.2,
         "CURRENCY_SAME": 3.2,
         "FREE_CASH_SAME": 10.6
+      }
+    ],
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 974553.8,
+        "SUM_SAME": 4.8
+      },
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      }
+    ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
       }
     ],
     "sources": [
