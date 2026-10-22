@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T20:01:34.816731+08:00",
+  "generatedAt": "2026-10-23T01:16:41.991903+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 18.51,
         "pb": 6.56,
         "turnoverRate": 0.34,
-        "retrievedAt": "2026-10-22T20:01:24.068979+08:00",
+        "retrievedAt": "2026-10-23T01:16:33.093766+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,17 +317,15 @@
         }
       ],
       "quote": {
-        "price": 71.73,
-        "previousClose": 72.0,
-        "changePct": -0.374999999999992,
-        "marketCap": 278427742198.65,
-        "floatMarketCap": 278420955536.43,
-        "peTtm": 15.9,
-        "pb": 2.35,
-        "turnoverRate": 0.56,
-        "retrievedAt": "2026-10-22T20:01:23.478571+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-23T01:16:36.579549+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
@@ -532,20 +530,25 @@
         }
       ],
       "quote": {
-        "price": 85.29,
-        "previousClose": 83.86,
-        "changePct": 1.705222990698796,
-        "marketCap": 650784949772.88,
-        "floatMarketCap": 587334009766.65,
-        "peTtm": 12.3,
-        "pb": 3.07,
-        "turnoverRate": 0.57,
-        "retrievedAt": "2026-10-22T20:01:24.062348+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-23T01:16:36.364046+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
+        {
+          "date": "2026-10-23",
+          "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225616891.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-10-17",
           "title": "关于以集中竞价交易方式回购A股股份进展情况的公告",
@@ -621,13 +624,6 @@
           "title": "关于参加2026年广东辖区投资者集体接待日暨辖区上市公司半年度报告业绩说明会活动的公告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-11/1225557650.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-09-03",
-          "title": "关于2026年A股持股计划非交易过户完成的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-09-03/1225544482.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -753,7 +749,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-22T20:01:26.927747+08:00",
+        "retrievedAt": "2026-10-23T01:16:36.484752+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -960,7 +956,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-22T20:01:28.078585+08:00",
+        "retrievedAt": "2026-10-23T01:16:39.703196+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1167,7 +1163,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-22T20:01:28.220677+08:00",
+        "retrievedAt": "2026-10-23T01:16:39.869930+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1380,7 +1376,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-22T20:01:33.085525+08:00",
+        "retrievedAt": "2026-10-23T01:16:40.889117+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1490,6 +1486,68 @@
     }
   ],
   "macro": {
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "NATIONAL_SAME": 0.9,
+        "NATIONAL_SEQUENTIAL": 0.2
+      }
+    ],
     "gdp": [
       {
         "REPORT_DATE": "2024-12-01 00:00:00",
@@ -1604,68 +1662,6 @@
         "BASIC_CURRENCY_SAME": 7.2,
         "CURRENCY_SAME": 3.2,
         "FREE_CASH_SAME": 10.6
-      }
-    ],
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "NATIONAL_SAME": 0.9,
-        "NATIONAL_SEQUENTIAL": 0.2
       }
     ],
     "pmi": [
