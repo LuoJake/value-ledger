@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T19:41:51.659848+08:00",
+  "generatedAt": "2026-10-26T00:30:44.421824+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 18.74,
         "pb": 6.64,
         "turnoverRate": 0.46,
-        "retrievedAt": "2026-10-25T19:41:39.388002+08:00",
+        "retrievedAt": "2026-10-26T00:30:32.105486+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 16.38,
         "pb": 2.42,
         "turnoverRate": 1.22,
-        "retrievedAt": "2026-10-25T19:41:41.470369+08:00",
+        "retrievedAt": "2026-10-26T00:30:33.488080+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -532,17 +532,15 @@
         }
       ],
       "quote": {
-        "price": 85.59,
-        "previousClose": 85.29,
-        "changePct": 0.3517411185367525,
-        "marketCap": 653076882460.98,
-        "floatMarketCap": 589402759408.65,
-        "peTtm": 12.35,
-        "pb": 3.08,
-        "turnoverRate": 0.49,
-        "retrievedAt": "2026-10-25T19:41:41.014916+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-26T00:30:34.099244+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -645,6 +643,420 @@
       "financialSource": {
         "name": "东方财富结构化财务数据",
         "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22000333.SZ%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
+    },
+    {
+      "code": "600036",
+      "exchange": "SH",
+      "name": "招商银行",
+      "orgId": "gssh0600036",
+      "type": "financial",
+      "symbol": "600036.SH",
+      "exchangeName": "上海证券交易所",
+      "metrics": {
+        "revenue": 337532000000,
+        "netProfit": 150181000000,
+        "operatingCashFlow": null,
+        "roe": 13.44,
+        "debtRatio": 90.2000937529,
+        "eps": 5.7,
+        "bookValuePerShare": 43.43,
+        "grossMargin": null
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-03-20",
+          "revenue": 290482000000,
+          "netProfit": 97342000000,
+          "operatingCashFlow": null,
+          "roe": 15.73,
+          "debtRatio": 91.2652210478,
+          "eps": 3.79,
+          "bookValuePerShare": 25.36,
+          "grossMargin": null
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-03-19",
+          "revenue": 331253000000,
+          "netProfit": 119922000000,
+          "operatingCashFlow": null,
+          "roe": 16.96,
+          "debtRatio": 90.6402958756,
+          "eps": 4.61,
+          "bookValuePerShare": 29.01,
+          "grossMargin": null
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-03-25",
+          "revenue": 344783000000,
+          "netProfit": 138012000000,
+          "operatingCashFlow": null,
+          "roe": 17.06,
+          "debtRatio": 90.5883589876,
+          "eps": 5.26,
+          "bookValuePerShare": 32.71,
+          "grossMargin": null
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-03-26",
+          "revenue": 339123000000,
+          "netProfit": 146602000000,
+          "operatingCashFlow": null,
+          "roe": 16.22,
+          "debtRatio": 90.1552280581,
+          "eps": 5.63,
+          "bookValuePerShare": 36.71,
+          "grossMargin": null
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-03-26",
+          "revenue": 337488000000,
+          "netProfit": 148391000000,
+          "operatingCashFlow": null,
+          "roe": 14.49,
+          "debtRatio": 89.8496433026,
+          "eps": 5.66,
+          "bookValuePerShare": 41.46,
+          "grossMargin": null
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-03-28",
+          "revenue": 337532000000,
+          "netProfit": 150181000000,
+          "operatingCashFlow": null,
+          "roe": 13.44,
+          "debtRatio": 90.2000937529,
+          "eps": 5.7,
+          "bookValuePerShare": 43.43,
+          "grossMargin": null
+        }
+      ],
+      "quote": {
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-26T00:30:36.813142+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "行情接口暂不可用",
+        "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-10-24",
+          "title": "招商银行股份有限公司关于召开2026年第三季度业绩说明会的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-24/600036_20261024_W596.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-21",
+          "title": "[H股公告]招商银行股份有限公司董事会会议召开日期",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-21/600036_20261021_21OM.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-01",
+          "title": "招商银行股份有限公司关于非执行董事离任的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600036_20261001_R8T8.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "招商银行股份有限公司董事会决议公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-30/600036_20260930_WZJE.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-23",
+          "title": "招商银行股份有限公司关于董事任职资格核准及董事会专门委员会成员调整的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-23/600036_20260923_4D1F.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "招商银行股份有限公司关于独立董事任职资格核准及董事会专门委员会成员调整的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-09/600036_20260909_W6ZY.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "招商银行股份有限公司关于高级管理人员离任的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-08/600036_20260908_1Z3V.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "招商银行股份有限公司2026年半年度第三支柱报告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/600036_20260829_8CVS.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "招商银行股份有限公司2026年半年度报告",
+          "type": "定期报告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/600036_20260829_94TO.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "招商银行股份有限公司董事会决议公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/600036_20260829_HKQ6.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-29",
+          "title": "招商银行股份有限公司2026年半年度报告摘要",
+          "type": "定期报告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-29/600036_20260829_SH9S.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "招商银行股份有限公司董事会决议公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-27/600036_20260827_XDMC.pdf",
+          "source": "上海证券交易所"
+        }
+      ],
+      "verification": {
+        "status": "unmatched",
+        "message": "未自动匹配年度报告，请人工复核",
+        "annualReport": null
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22600036.SH%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
+        "role": "计算辅助；最终以交易所/巨潮公告原文为准"
+      }
+    },
+    {
+      "code": "601318",
+      "exchange": "SH",
+      "name": "中国平安",
+      "orgId": "gssh0601318",
+      "type": "financial",
+      "symbol": "601318.SH",
+      "exchangeName": "上海证券交易所",
+      "metrics": {
+        "revenue": 1050506000000,
+        "netProfit": 134778000000,
+        "operatingCashFlow": null,
+        "roe": 14,
+        "debtRatio": 89.8119152819,
+        "eps": 7.68,
+        "bookValuePerShare": 55.25,
+        "grossMargin": null
+      },
+      "series": [
+        {
+          "year": "2020",
+          "reportDate": "2020-12-31",
+          "noticeDate": "2021-02-04",
+          "revenue": 1218315000000,
+          "netProfit": 143099000000,
+          "operatingCashFlow": null,
+          "roe": 20,
+          "debtRatio": 89.6314181449,
+          "eps": 8.1,
+          "bookValuePerShare": 41.72,
+          "grossMargin": null
+        },
+        {
+          "year": "2021",
+          "reportDate": "2021-12-31",
+          "noticeDate": "2022-03-18",
+          "revenue": 1180444000000,
+          "netProfit": 101618000000,
+          "operatingCashFlow": null,
+          "roe": 13,
+          "debtRatio": 89.3736912132,
+          "eps": 5.77,
+          "bookValuePerShare": 44.44,
+          "grossMargin": null
+        },
+        {
+          "year": "2022",
+          "reportDate": "2022-12-31",
+          "noticeDate": "2023-03-16",
+          "revenue": 880355000000,
+          "netProfit": 111008000000,
+          "operatingCashFlow": null,
+          "roe": 13.2,
+          "debtRatio": 89.2279521959,
+          "eps": 6.36,
+          "bookValuePerShare": 46.97,
+          "grossMargin": null
+        },
+        {
+          "year": "2023",
+          "reportDate": "2023-12-31",
+          "noticeDate": "2024-03-22",
+          "revenue": 913789000000,
+          "netProfit": 85665000000,
+          "operatingCashFlow": null,
+          "roe": 9.7,
+          "debtRatio": 89.3903154829,
+          "eps": 4.84,
+          "bookValuePerShare": 49.37,
+          "grossMargin": null
+        },
+        {
+          "year": "2024",
+          "reportDate": "2024-12-31",
+          "noticeDate": "2025-03-20",
+          "revenue": 1028925000000,
+          "netProfit": 126607000000,
+          "operatingCashFlow": null,
+          "roe": 13.8,
+          "debtRatio": 89.931089526,
+          "eps": 7.16,
+          "bookValuePerShare": 50.99,
+          "grossMargin": null
+        },
+        {
+          "year": "2025",
+          "reportDate": "2025-12-31",
+          "noticeDate": "2026-03-27",
+          "revenue": 1050506000000,
+          "netProfit": 134778000000,
+          "operatingCashFlow": null,
+          "roe": 14,
+          "debtRatio": 89.8119152819,
+          "eps": 7.68,
+          "bookValuePerShare": 55.25,
+          "grossMargin": null
+        }
+      ],
+      "quote": {
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-26T00:30:39.720657+08:00",
+        "provider": "东方财富行情接口",
+        "freshness": "行情接口暂不可用",
+        "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
+      },
+      "announcements": [
+        {
+          "date": "2026-10-24",
+          "title": "中国平安：平安银行股份有限公司2026年第三季度报告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-24/601318_20261024_3X2A.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-24",
+          "title": "中国平安关于披露平安银行2026年第三季度报告的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-24/601318_20261024_IXW9.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-21",
+          "title": "中国平安关于召开2026年第三季度业绩说明会的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-21/601318_20261021_W79K.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-16/601318_20261016_F1L3.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "中国平安非执行董事辞任公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-16/601318_20261016_ZZUT.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-10-01",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/601318_20261001_S387.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-25/601318_20260925_DNT0.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-25/601318_20260925_NVQI.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "中国平安关于选举第十三届董事会职工董事的公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-08/601318_20260908_N57B.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "中国平安2026年半年度权益分派实施公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-03/601318_20260903_L36E.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-02/601318_20260902_0J89.pdf",
+          "source": "上海证券交易所"
+        },
+        {
+          "date": "2026-08-21",
+          "title": "中国平安信息披露事务管理制度（2026版）",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-21/601318_20260821_07Y3.pdf",
+          "source": "上海证券交易所"
+        }
+      ],
+      "verification": {
+        "status": "unmatched",
+        "message": "未自动匹配年度报告，请人工复核",
+        "annualReport": null
+      },
+      "financialSource": {
+        "name": "东方财富结构化财务数据",
+        "url": "https://datacenter.eastmoney.com/securities/api/data/v1/get?reportName=RPT_F10_FINANCE_MAINFINADATA&columns=ALL&filter=%28SECUCODE%3D%22601318.SH%22%29%28REPORT_TYPE%3D%22%E5%B9%B4%E6%8A%A5%22%29&pageNumber=1&pageSize=8&sortTypes=-1&sortColumns=REPORT_DATE",
         "role": "计算辅助；最终以交易所/巨潮公告原文为准"
       }
     },
@@ -753,7 +1165,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-25T19:41:47.975605+08:00",
+        "retrievedAt": "2026-10-26T00:30:38.648026+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -966,7 +1378,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-25T19:41:50.011603+08:00",
+        "retrievedAt": "2026-10-26T00:30:43.318956+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1076,130 +1488,6 @@
     }
   ],
   "macro": {
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "NATIONAL_SAME": 0.9,
-        "NATIONAL_SEQUENTIAL": 0.2
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      }
-    ],
     "money": [
       {
         "REPORT_DATE": "2025-10-01 00:00:00",
@@ -1274,6 +1562,68 @@
         "FREE_CASH_SAME": 10.6
       }
     ],
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "NATIONAL_SAME": 0.9,
+        "NATIONAL_SEQUENTIAL": 0.2
+      }
+    ],
     "gdp": [
       {
         "REPORT_DATE": "2024-12-01 00:00:00",
@@ -1316,6 +1666,68 @@
         "SUM_SAME": 4.6
       }
     ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      }
+    ],
     "sources": [
       {
         "name": "国家统计局",
@@ -1334,16 +1746,5 @@
       }
     ]
   },
-  "errors": [
-    {
-      "code": "600036",
-      "name": "招商银行",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.sse.com.cn/', 'https://query.sse.com.cn/security/stock/queryCompanyBulletin.do?isPagination=true&productId=600036&keyWord=&securityType=0101%2C120100%2C020100%2C020200%2C120200&pageHelp.pageSize=50&pageHelp.pageCount=50&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1']' returned non-zero exit status 22."
-    },
-    {
-      "code": "601318",
-      "name": "中国平安",
-      "error": "Command '['curl', '--http1.1', '--fail', '--silent', '--show-error', '--location', '--connect-timeout', '6', '--max-time', '15', '--user-agent', 'Mozilla/5.0 (compatible; ValueLedger/2.0; +https://github.com/LuoJake/value-ledger)', '--header', 'Referer: https://www.sse.com.cn/', 'https://query.sse.com.cn/security/stock/queryCompanyBulletin.do?isPagination=true&productId=601318&keyWord=&securityType=0101%2C120100%2C020100%2C020200%2C120200&pageHelp.pageSize=50&pageHelp.pageCount=50&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1']' returned non-zero exit status 22."
-    }
-  ]
+  "errors": []
 }
