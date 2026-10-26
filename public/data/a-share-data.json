@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T23:15:23.909008+08:00",
+  "generatedAt": "2026-10-27T05:03:40.968093+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 18.95,
         "pb": 6.72,
         "turnoverRate": 0.33,
-        "retrievedAt": "2026-10-26T23:15:14.401510+08:00",
+        "retrievedAt": "2026-10-27T05:03:28.850399+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 16.77,
         "pb": 2.48,
         "turnoverRate": 0.97,
-        "retrievedAt": "2026-10-26T23:15:15.802898+08:00",
+        "retrievedAt": "2026-10-27T05:03:29.771366+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -540,7 +540,7 @@
         "peTtm": 12.33,
         "pb": 3.08,
         "turnoverRate": 0.47,
-        "retrievedAt": "2026-10-26T23:15:15.763691+08:00",
+        "retrievedAt": "2026-10-27T05:03:29.486739+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -753,7 +753,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-26T23:15:18.101603+08:00",
+        "retrievedAt": "2026-10-27T05:03:33.908759+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -960,7 +960,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-26T23:15:21.885938+08:00",
+        "retrievedAt": "2026-10-27T05:03:33.527505+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1167,12 +1167,40 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-26T23:15:21.697632+08:00",
+        "retrievedAt": "2026-10-27T05:03:34.074865+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
+        {
+          "date": "2026-10-27",
+          "title": "关于召开2026年第一次临时股东会的通知",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-27/1225627220.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-10-27",
+          "title": "第十三届董事会第八次会议决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-27/1225627219.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-10-27",
+          "title": "2026年三季度报告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-27/1225627217.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-10-27",
+          "title": "2026年中期利润分配预案的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-27/1225627214.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-10-09",
           "title": "关于股份回购进展情况的公告",
@@ -1227,34 +1255,6 @@
           "title": "2026年半年度报告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515004.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-27",
-          "title": "2026年半年度报告摘要",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515003.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-21",
-          "title": "关于2025年年度权益分派实施后调整股份回购价格上限的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487187.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-21",
-          "title": "2025年年度权益分派实施公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487186.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-20",
-          "title": "关于第四期员工持股计划非交易过户完成的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-20/1225483700.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -1380,7 +1380,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-26T23:15:22.076095+08:00",
+        "retrievedAt": "2026-10-27T05:03:39.950988+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1490,6 +1490,130 @@
     }
   ],
   "macro": {
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      }
+    ],
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "NATIONAL_SAME": 0.9,
+        "NATIONAL_SEQUENTIAL": 0.2
+      }
+    ],
     "money": [
       {
         "REPORT_DATE": "2025-10-01 00:00:00",
@@ -1604,130 +1728,6 @@
         "REPORT_DATE": "2026-09-01 00:00:00",
         "DOMESTICL_PRODUCT_BASE": 1071071.2,
         "SUM_SAME": 4.6
-      }
-    ],
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "NATIONAL_SAME": 0.9,
-        "NATIONAL_SEQUENTIAL": 0.2
-      }
-    ],
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
       }
     ],
     "sources": [
