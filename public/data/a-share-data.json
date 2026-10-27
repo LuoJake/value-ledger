@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:58:35.016974+08:00",
+  "generatedAt": "2026-10-27T22:37:10.035758+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 19.04,
         "pb": 6.75,
         "turnoverRate": 0.31,
-        "retrievedAt": "2026-10-27T15:58:25.553289+08:00",
+        "retrievedAt": "2026-10-27T22:36:34.383406+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,17 +317,15 @@
         }
       ],
       "quote": {
-        "price": 75.38,
-        "previousClose": 75.63,
-        "changePct": -0.3305566574110852,
-        "marketCap": 292595611416.89996,
-        "floatMarketCap": 292588479413.57996,
-        "peTtm": 16.71,
-        "pb": 2.47,
-        "turnoverRate": 0.73,
-        "retrievedAt": "2026-10-27T15:58:26.130812+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-27T22:36:40.207230+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
@@ -532,17 +530,15 @@
         }
       ],
       "quote": {
-        "price": 85.04,
-        "previousClose": 85.5,
-        "changePct": -0.5380116959064263,
-        "marketCap": 648881198598.88,
-        "floatMarketCap": 585616244464.4,
-        "peTtm": 12.27,
-        "pb": 3.06,
-        "turnoverRate": 0.46,
-        "retrievedAt": "2026-10-27T15:58:27.313796+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-10-27T22:36:41.160266+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -753,7 +749,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-27T15:58:28.831920+08:00",
+        "retrievedAt": "2026-10-27T22:36:39.561199+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -960,7 +956,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-27T15:58:30.489438+08:00",
+        "retrievedAt": "2026-10-27T22:36:44.700011+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1167,7 +1163,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-27T15:58:30.949894+08:00",
+        "retrievedAt": "2026-10-27T22:36:54.213383+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1380,7 +1376,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-10-27T15:58:33.977455+08:00",
+        "retrievedAt": "2026-10-27T22:37:08.824965+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1490,172 +1486,6 @@
     }
   ],
   "macro": {
-    "pmi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "MAKE_INDEX": 49.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "MAKE_INDEX": 49,
-        "NMAKE_INDEX": 49.5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "MAKE_INDEX": 50.4,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 49.4
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "MAKE_INDEX": 50,
-        "NMAKE_INDEX": 50.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "MAKE_INDEX": 50.3,
-        "NMAKE_INDEX": 50.2
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "MAKE_INDEX": 49.2,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "MAKE_INDEX": 49.8,
-        "NMAKE_INDEX": 49
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "MAKE_INDEX": 50.1,
-        "NMAKE_INDEX": 50.2
-      }
-    ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1071071.2,
-        "SUM_SAME": 4.6
-      }
-    ],
-    "cpi": [
-      {
-        "REPORT_DATE": "2025-10-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2025-11-01 00:00:00",
-        "NATIONAL_SAME": 0.7,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-01-01 00:00:00",
-        "NATIONAL_SAME": 0.2,
-        "NATIONAL_SEQUENTIAL": 0.2
-      },
-      {
-        "REPORT_DATE": "2026-02-01 00:00:00",
-        "NATIONAL_SAME": 1.3,
-        "NATIONAL_SEQUENTIAL": 1
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.7
-      },
-      {
-        "REPORT_DATE": "2026-04-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": 0.3
-      },
-      {
-        "REPORT_DATE": "2026-05-01 00:00:00",
-        "NATIONAL_SAME": 1.2,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "NATIONAL_SAME": 1,
-        "NATIONAL_SEQUENTIAL": -0.3
-      },
-      {
-        "REPORT_DATE": "2026-07-01 00:00:00",
-        "NATIONAL_SAME": 0.5,
-        "NATIONAL_SEQUENTIAL": -0.1
-      },
-      {
-        "REPORT_DATE": "2026-08-01 00:00:00",
-        "NATIONAL_SAME": 0.8,
-        "NATIONAL_SEQUENTIAL": 0.4
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "NATIONAL_SAME": 0.9,
-        "NATIONAL_SEQUENTIAL": 0.2
-      }
-    ],
     "money": [
       {
         "REPORT_DATE": "2025-10-01 00:00:00",
@@ -1728,6 +1558,172 @@
         "BASIC_CURRENCY_SAME": 7.2,
         "CURRENCY_SAME": 3.2,
         "FREE_CASH_SAME": 10.6
+      }
+    ],
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1071071.2,
+        "SUM_SAME": 4.6
+      }
+    ],
+    "pmi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "MAKE_INDEX": 49.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "MAKE_INDEX": 49,
+        "NMAKE_INDEX": 49.5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "MAKE_INDEX": 50.4,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 49.4
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "MAKE_INDEX": 50,
+        "NMAKE_INDEX": 50.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "MAKE_INDEX": 50.3,
+        "NMAKE_INDEX": 50.2
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "MAKE_INDEX": 49.2,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "MAKE_INDEX": 49.8,
+        "NMAKE_INDEX": 49
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "MAKE_INDEX": 50.1,
+        "NMAKE_INDEX": 50.2
+      }
+    ],
+    "cpi": [
+      {
+        "REPORT_DATE": "2025-10-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2025-11-01 00:00:00",
+        "NATIONAL_SAME": 0.7,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-01-01 00:00:00",
+        "NATIONAL_SAME": 0.2,
+        "NATIONAL_SEQUENTIAL": 0.2
+      },
+      {
+        "REPORT_DATE": "2026-02-01 00:00:00",
+        "NATIONAL_SAME": 1.3,
+        "NATIONAL_SEQUENTIAL": 1
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.7
+      },
+      {
+        "REPORT_DATE": "2026-04-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": 0.3
+      },
+      {
+        "REPORT_DATE": "2026-05-01 00:00:00",
+        "NATIONAL_SAME": 1.2,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "NATIONAL_SAME": 1,
+        "NATIONAL_SEQUENTIAL": -0.3
+      },
+      {
+        "REPORT_DATE": "2026-07-01 00:00:00",
+        "NATIONAL_SAME": 0.5,
+        "NATIONAL_SEQUENTIAL": -0.1
+      },
+      {
+        "REPORT_DATE": "2026-08-01 00:00:00",
+        "NATIONAL_SAME": 0.8,
+        "NATIONAL_SEQUENTIAL": 0.4
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "NATIONAL_SAME": 0.9,
+        "NATIONAL_SEQUENTIAL": 0.2
       }
     ],
     "sources": [
