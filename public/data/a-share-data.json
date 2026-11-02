@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T17:36:32.762552+08:00",
+  "generatedAt": "2026-11-03T04:24:07.969166+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 20.93,
         "pb": 6.63,
         "turnoverRate": 0.66,
-        "retrievedAt": "2026-11-02T17:36:20.003158+08:00",
+        "retrievedAt": "2026-11-03T04:23:56.517052+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -325,7 +325,7 @@
         "peTtm": 22.26,
         "pb": 2.43,
         "turnoverRate": 1.29,
-        "retrievedAt": "2026-11-02T17:36:20.777104+08:00",
+        "retrievedAt": "2026-11-03T04:23:58.515255+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
@@ -535,12 +535,12 @@
         "price": 87.66,
         "previousClose": 89.18,
         "changePct": -1.7044180309486512,
-        "marketCap": 668872599590.52,
-        "floatMarketCap": 603658513520.1,
+        "marketCap": 668881457633.52,
+        "floatMarketCap": 603667371563.1,
         "peTtm": 12.12,
         "pb": 3.01,
         "turnoverRate": 0.54,
-        "retrievedAt": "2026-11-02T17:36:20.967564+08:00",
+        "retrievedAt": "2026-11-03T04:23:57.977313+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
@@ -755,7 +755,7 @@
         "peTtm": 7.01,
         "pb": 0.92,
         "turnoverRate": 0.62,
-        "retrievedAt": "2026-11-02T17:36:24.670065+08:00",
+        "retrievedAt": "2026-11-03T04:24:01.208423+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
@@ -964,12 +964,19 @@
         "peTtm": 7.46,
         "pb": 0.92,
         "turnoverRate": 0.75,
-        "retrievedAt": "2026-11-02T17:36:25.447268+08:00",
+        "retrievedAt": "2026-11-03T04:24:02.405884+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
+        {
+          "date": "2026-11-03",
+          "title": "中国平安H股公告",
+          "type": "临时公告",
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-11-03/601318_20261103_PJ87.pdf",
+          "source": "上海证券交易所"
+        },
         {
           "date": "2026-10-29",
           "title": "中国平安2026年第三季度报告",
@@ -1045,13 +1052,6 @@
           "title": "中国平安H股公告",
           "type": "临时公告",
           "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-25/601318_20260925_DNT0.pdf",
-          "source": "上海证券交易所"
-        },
-        {
-          "date": "2026-09-25",
-          "title": "中国平安H股公告",
-          "type": "临时公告",
-          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-25/601318_20260925_NVQI.pdf",
           "source": "上海证券交易所"
         }
       ],
@@ -1173,12 +1173,19 @@
         "peTtm": 9.37,
         "pb": 1.43,
         "turnoverRate": 0.92,
-        "retrievedAt": "2026-11-02T17:36:26.185635+08:00",
+        "retrievedAt": "2026-11-03T04:24:03.991696+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
+        {
+          "date": "2026-11-03",
+          "title": "关于股份回购进展情况的公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-03/1225653096.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-10-29",
           "title": "关于回购公司股份比例达到1%的进展公告",
@@ -1254,13 +1261,6 @@
           "title": "关于子公司之间提供担保的公告",
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515007.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-08-27",
-          "title": "第十三届董事会第七次会议决议公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225515006.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
@@ -1388,12 +1388,33 @@
         "peTtm": 12.92,
         "pb": 2.87,
         "turnoverRate": 1.23,
-        "retrievedAt": "2026-11-02T17:36:31.904445+08:00",
+        "retrievedAt": "2026-11-03T04:24:07.048285+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
+        {
+          "date": "2026-11-02",
+          "title": "上海市通力律师事务所关于宁德时代新能源科技股份有限公司2026年第二次临时股东会的法律意见书",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-02/1225654266.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "2026年第二次临时股东会决议公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-02/1225654265.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "关于回购公司A股股份的进展公告",
+          "type": "公司公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-02/1225654264.PDF",
+          "source": "巨潮资讯（证监会指定披露平台）"
+        },
         {
           "date": "2026-10-29",
           "title": "H股公告（翌日披露报表）",
@@ -1456,27 +1477,6 @@
           "type": "公司公告",
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-15/1225607499.PDF",
           "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-10-14",
-          "title": "关于参与投资的基金完成私募投资基金备案的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-10-14/1225605239.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-10-13",
-          "title": "关于参与投资上海时代宸远创业投资合伙企业（有限合伙）的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-10-13/1225603557.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
-        },
-        {
-          "date": "2026-10-12",
-          "title": "关于参与投资的基金完成私募投资基金备案的公告",
-          "type": "公司公告",
-          "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225600435.PDF",
-          "source": "巨潮资讯（证监会指定披露平台）"
         }
       ],
       "verification": {
@@ -1498,6 +1498,48 @@
     }
   ],
   "macro": {
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1071071.2,
+        "SUM_SAME": 4.6
+      }
+    ],
     "pmi": [
       {
         "REPORT_DATE": "2025-11-01 00:00:00",
@@ -1558,48 +1600,6 @@
         "REPORT_DATE": "2026-10-01 00:00:00",
         "MAKE_INDEX": 49.3,
         "NMAKE_INDEX": 49.7
-      }
-    ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1071071.2,
-        "SUM_SAME": 4.6
       }
     ],
     "money": [
