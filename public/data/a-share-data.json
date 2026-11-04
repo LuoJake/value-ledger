@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T17:25:19.820602+08:00",
+  "generatedAt": "2026-11-05T02:02:13.952980+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -102,15 +102,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:11.129821+08:00",
+        "price": 1446.44,
+        "previousClose": 1480.0,
+        "changePct": -2.2675675675675633,
+        "marketCap": 1808168030950.4402,
+        "floatMarketCap": 1808168030950.4402,
+        "peTtm": 21.04,
+        "pb": 6.67,
+        "turnoverRate": 0.52,
+        "retrievedAt": "2026-11-05T02:02:04.273176+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
       },
       "announcements": [
@@ -315,15 +317,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:11.522882+08:00",
+        "price": 75.1,
+        "previousClose": 75.55,
+        "changePct": -0.595632031767046,
+        "marketCap": 291508761175.5,
+        "floatMarketCap": 291501655664.1,
+        "peTtm": 22.51,
+        "pb": 2.46,
+        "turnoverRate": 0.99,
+        "retrievedAt": "2026-11-05T02:02:05.628542+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
@@ -528,15 +532,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:11.548321+08:00",
+        "price": 87.98,
+        "previousClose": 88.88,
+        "changePct": -1.0126012601260004,
+        "marketCap": 671330499466.4401,
+        "floatMarketCap": 605878351480.18,
+        "peTtm": 12.16,
+        "pb": 3.02,
+        "turnoverRate": 0.58,
+        "retrievedAt": "2026-11-05T02:02:05.162207+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -741,15 +747,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:15.072230+08:00",
+        "price": 42.54,
+        "previousClose": 42.69,
+        "changePct": -0.35137034434293835,
+        "marketCap": 1072852231866.54,
+        "floatMarketCap": 877555296009.66,
+        "peTtm": 6.91,
+        "pb": 0.91,
+        "turnoverRate": 0.65,
+        "retrievedAt": "2026-11-05T02:02:09.098247+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -948,15 +956,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:15.516392+08:00",
+        "price": 54.01,
+        "previousClose": 54.59,
+        "changePct": -1.0624656530500154,
+        "marketCap": 977993744149.95,
+        "floatMarketCap": 575750115132.83,
+        "peTtm": 7.59,
+        "pb": 0.94,
+        "turnoverRate": 0.81,
+        "retrievedAt": "2026-11-05T02:02:09.707733+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
       },
       "announcements": [
@@ -1155,15 +1165,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:15.025180+08:00",
+        "price": 38.96,
+        "previousClose": 39.19,
+        "changePct": -0.5868844092880798,
+        "marketCap": 218230767669.36002,
+        "floatMarketCap": 214782310929.36002,
+        "peTtm": 9.48,
+        "pb": 1.45,
+        "turnoverRate": 0.86,
+        "retrievedAt": "2026-11-05T02:02:10.703610+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
       },
       "announcements": [
@@ -1368,15 +1380,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-04T17:25:18.652381+08:00",
+        "price": 252.88,
+        "previousClose": 249.32,
+        "changePct": 1.4278838440558328,
+        "marketCap": 1170138900595.68,
+        "floatMarketCap": 1077424847949.04,
+        "peTtm": 13.6,
+        "pb": 3.02,
+        "turnoverRate": 1.32,
+        "retrievedAt": "2026-11-05T02:02:13.375924+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
       },
       "announcements": [
