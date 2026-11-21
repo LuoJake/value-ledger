@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T11:15:27.076056+08:00",
+  "generatedAt": "2026-11-21T20:45:32.094207+08:00",
   "market": "中国 A 股",
   "sourcePolicy": "财务指标使用结构化辅助源计算，逐家公司链接交易所或巨潮官方公告复核；行情为延迟快照。",
   "companies": [
@@ -110,7 +110,7 @@
         "peTtm": 21.61,
         "pb": 6.85,
         "turnoverRate": 0.54,
-        "retrievedAt": "2026-11-21T11:15:14.494837+08:00",
+        "retrievedAt": "2026-11-21T20:45:21.592548+08:00",
         "provider": "东方财富行情接口",
         "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sh600519.html"
@@ -317,15 +317,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-21T11:15:17.055877+08:00",
+        "price": 72.55,
+        "previousClose": 73.4,
+        "changePct": -1.1580381471389734,
+        "marketCap": 281610660762.75,
+        "floatMarketCap": 281603796517.05,
+        "peTtm": 21.75,
+        "pb": 2.38,
+        "turnoverRate": 0.65,
+        "retrievedAt": "2026-11-21T20:45:22.828137+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000858.html"
       },
       "announcements": [
@@ -530,15 +532,17 @@
         }
       ],
       "quote": {
-        "price": null,
-        "previousClose": null,
-        "changePct": null,
-        "marketCap": null,
-        "peTtm": null,
-        "pb": null,
-        "retrievedAt": "2026-11-21T11:15:16.802968+08:00",
+        "price": 94.82,
+        "previousClose": 95.01,
+        "changePct": -0.19997894958426743,
+        "marketCap": 723507177932.88,
+        "floatMarketCap": 653030491570.6,
+        "peTtm": 13.11,
+        "pb": 3.25,
+        "turnoverRate": 0.48,
+        "retrievedAt": "2026-11-21T20:45:22.601237+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "行情接口暂不可用",
+        "freshness": "延迟快照，禁止用于交易下单",
         "sourceUrl": "https://quote.eastmoney.com/sz000333.html"
       },
       "announcements": [
@@ -743,17 +747,15 @@
         }
       ],
       "quote": {
-        "price": 44.0,
-        "previousClose": 43.32,
-        "changePct": 1.5697137580794163,
-        "marketCap": 1109673206444.0,
-        "floatMarketCap": 907673554876.0,
-        "peTtm": 7.15,
-        "pb": 0.94,
-        "turnoverRate": 0.74,
-        "retrievedAt": "2026-11-21T11:15:19.450747+08:00",
+        "price": null,
+        "previousClose": null,
+        "changePct": null,
+        "marketCap": null,
+        "peTtm": null,
+        "pb": null,
+        "retrievedAt": "2026-11-21T20:45:27.705339+08:00",
         "provider": "东方财富行情接口",
-        "freshness": "延迟快照，禁止用于交易下单",
+        "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh600036.html"
       },
       "announcements": [
@@ -958,7 +960,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-11-21T11:15:22.288646+08:00",
+        "retrievedAt": "2026-11-21T20:45:26.028529+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sh601318.html"
@@ -1165,7 +1167,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-11-21T11:15:24.568367+08:00",
+        "retrievedAt": "2026-11-21T20:45:28.204397+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz000651.html"
@@ -1378,7 +1380,7 @@
         "marketCap": null,
         "peTtm": null,
         "pb": null,
-        "retrievedAt": "2026-11-21T11:15:25.821687+08:00",
+        "retrievedAt": "2026-11-21T20:45:31.374030+08:00",
         "provider": "东方财富行情接口",
         "freshness": "行情接口暂不可用",
         "sourceUrl": "https://quote.eastmoney.com/sz300750.html"
@@ -1488,6 +1490,48 @@
     }
   ],
   "macro": {
+    "gdp": [
+      {
+        "REPORT_DATE": "2024-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1348066.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2025-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 318466.4,
+        "SUM_SAME": 5.4
+      },
+      {
+        "REPORT_DATE": "2025-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 659861.6,
+        "SUM_SAME": 5.3
+      },
+      {
+        "REPORT_DATE": "2025-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1013967.9,
+        "SUM_SAME": 5.2
+      },
+      {
+        "REPORT_DATE": "2025-12-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1401879.2,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-03-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 334192.9,
+        "SUM_SAME": 5
+      },
+      {
+        "REPORT_DATE": "2026-06-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 695704,
+        "SUM_SAME": 4.7
+      },
+      {
+        "REPORT_DATE": "2026-09-01 00:00:00",
+        "DOMESTICL_PRODUCT_BASE": 1071071.2,
+        "SUM_SAME": 4.6
+      }
+    ],
     "cpi": [
       {
         "REPORT_DATE": "2025-11-01 00:00:00",
@@ -1610,48 +1654,6 @@
         "REPORT_DATE": "2026-10-01 00:00:00",
         "MAKE_INDEX": 49.3,
         "NMAKE_INDEX": 49.7
-      }
-    ],
-    "gdp": [
-      {
-        "REPORT_DATE": "2024-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1348066.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2025-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 318466.4,
-        "SUM_SAME": 5.4
-      },
-      {
-        "REPORT_DATE": "2025-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 659861.6,
-        "SUM_SAME": 5.3
-      },
-      {
-        "REPORT_DATE": "2025-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1013967.9,
-        "SUM_SAME": 5.2
-      },
-      {
-        "REPORT_DATE": "2025-12-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1401879.2,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-03-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 334192.9,
-        "SUM_SAME": 5
-      },
-      {
-        "REPORT_DATE": "2026-06-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 695704,
-        "SUM_SAME": 4.7
-      },
-      {
-        "REPORT_DATE": "2026-09-01 00:00:00",
-        "DOMESTICL_PRODUCT_BASE": 1071071.2,
-        "SUM_SAME": 4.6
       }
     ],
     "money": [
